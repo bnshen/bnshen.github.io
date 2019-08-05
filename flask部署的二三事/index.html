@@ -31,21 +31,21 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
     
     
       
-        <title>深度瞎扯</title>
+        <title>Flask部署 - 深度瞎扯</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/application.0284f74d.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.0284f74d.css">
       
       
     
     
-      <script src="assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
@@ -54,7 +54,7 @@
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
     
     
@@ -75,7 +75,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#welcome-to-deep-bullshit" tabindex="1" class="md-skip">
+      <a href="#flask" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -84,7 +84,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="." title="深度瞎扯" class="md-header-nav__button md-logo">
+        <a href=".." title="深度瞎扯" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -101,7 +101,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Welcome
+                Flask部署
               
             </span>
           
@@ -154,7 +154,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="." title="深度瞎扯" class="md-nav__button md-logo">
+    <a href=".." title="深度瞎扯" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
@@ -168,20 +168,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="." title="Welcome" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href=".." title="Welcome" class="md-nav__link">
       Welcome
     </a>
-    
   </li>
 
     
@@ -191,7 +182,7 @@
 
 
   <li class="md-nav__item">
-    <a href="CUDA10深度学习服务器搭建/" title="深度学习服务器搭建" class="md-nav__link">
+    <a href="../CUDA10深度学习服务器搭建/" title="深度学习服务器搭建" class="md-nav__link">
       深度学习服务器搭建
     </a>
   </li>
@@ -203,7 +194,7 @@
 
 
   <li class="md-nav__item">
-    <a href="配置Ngrok服务器实现内网穿透/" title="配置Ngrok服务器" class="md-nav__link">
+    <a href="../配置Ngrok服务器实现内网穿透/" title="配置Ngrok服务器" class="md-nav__link">
       配置Ngrok服务器
     </a>
   </li>
@@ -215,7 +206,7 @@
 
 
   <li class="md-nav__item">
-    <a href="MACOS下安装Pylucene安装过程 && 踩坑记录/" title="MAC下安装Pylucenes踩坑记录" class="md-nav__link">
+    <a href="../MACOS下安装Pylucene安装过程 && 踩坑记录/" title="MAC下安装Pylucenes踩坑记录" class="md-nav__link">
       MAC下安装Pylucenes踩坑记录
     </a>
   </li>
@@ -246,7 +237,7 @@
 
 
   <li class="md-nav__item">
-    <a href="体系结构复习/" title="Architecture" class="md-nav__link">
+    <a href="../体系结构复习/" title="Architecture" class="md-nav__link">
       Architecture
     </a>
   </li>
@@ -258,7 +249,7 @@
 
 
   <li class="md-nav__item">
-    <a href="数据库原理(2)复习/" title="Database2" class="md-nav__link">
+    <a href="../数据库原理(2)复习/" title="Database2" class="md-nav__link">
       Database2
     </a>
   </li>
@@ -273,10 +264,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
     
     <label class="md-nav__link" for="nav-6">
       部署那些事
@@ -292,11 +285,72 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="flask部署的二三事/" title="Flask部署" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Flask部署
+      </label>
+    
+    <a href="./" title="Flask部署" class="md-nav__link md-nav__link--active">
       Flask部署
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#flask" title="Flask部署的二三事" class="md-nav__link">
+    Flask部署的二三事
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wsgi" title="使用WSGI服务器" class="md-nav__link">
+    使用WSGI服务器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsgi_1" title="配置WSGI服务器" class="md-nav__link">
+    配置WSGI服务器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nginx" title="配置NGINX代理服务器" class="md-nav__link">
+    配置NGINX代理服务器
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -319,8 +373,49 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#flask" title="Flask部署的二三事" class="md-nav__link">
+    Flask部署的二三事
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wsgi" title="使用WSGI服务器" class="md-nav__link">
+    使用WSGI服务器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsgi_1" title="配置WSGI服务器" class="md-nav__link">
+    配置WSGI服务器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nginx" title="配置NGINX代理服务器" class="md-nav__link">
+    配置NGINX代理服务器
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
   
 </nav>
                   </div>
@@ -333,10 +428,65 @@
               
                 
                 
-                <h1 id="welcome-to-deep-bullshit">welcome to deep bullshit</h1>
-<ul>
-<li>探索计算机科学的下界</li>
-</ul>
+                  <h1>Flask部署</h1>
+                
+                <h3 id="flask">Flask部署的二三事</h3>
+<p>当使用Flask作为开发语言的后端要上线之时，就会遇到部署的问题。众所周知，flask自带的开发服务器是不能用在生产环境的，正如官网这么说：</p>
+<blockquote>
+<p>While lightweight and easy to use, Flask’s built-in server is not suitable for production as it doesn’t scale well. Some of the options available for properly running Flask in production are documented here.</p>
+</blockquote>
+<p>常用的部署方案为使用<code>uWSGI</code></p>
+<h4 id="wsgi">使用WSGI服务器</h4>
+<div class="highlight"><pre><span></span>uwsgi --http <span class="m">127</span>.0.0.1:5000 --module myproject:app
+</pre></div>
+
+<p>官网这么说：</p>
+<blockquote>
+<p>For a more optimized setup, see configuring uWSGI and NGINX.</p>
+</blockquote>
+<p><code>WSGI</code>作为web服务器，<code>NGINX</code>作为代理服务器</p>
+<h4 id="wsgi_1">配置WSGI服务器</h4>
+<p>常见的配置方案：创建<code>config.ini</code></p>
+<div class="highlight"><pre><span></span><span class="k">[uwsgi]</span>
+<span class="c1"># uwsgi 启动时所使用的地址与端口</span>
+<span class="na">http-socket</span> <span class="o">=</span> <span class="s">127.0.0.1:9001</span>
+<span class="c1"># Flask目录</span>
+<span class="na">chdir</span> <span class="o">=</span> <span class="s">/home/xxxx/flask-app</span>
+<span class="c1"># Flask 启动文件</span>
+<span class="na">wsgi-file</span> <span class="o">=</span> <span class="s">main.py</span>
+<span class="c1"># Flask实例名字</span>
+<span class="na">callable</span> <span class="o">=</span> <span class="s">app</span>
+<span class="c1"># 处理器数</span>
+<span class="na">processes</span> <span class="o">=</span> <span class="s">4</span>
+<span class="c1"># 线程数</span>
+<span class="na">threads</span> <span class="o">=</span> <span class="s">2</span>
+<span class="c1">#状态检测地址</span>
+<span class="na">stats</span> <span class="o">=</span> <span class="s">127.0.0.1:919</span>
+</pre></div>
+
+<p>启动wsgi服务器</p>
+<div class="highlight"><pre><span></span>wsgi --ini config.ini
+</pre></div>
+
+<h4 id="nginx">配置NGINX代理服务器</h4>
+<div class="highlight"><pre><span></span><span class="k">http{</span>
+  <span class="s">server</span> <span class="p">{</span>
+         <span class="kn">listen</span>  <span class="mi">5001</span><span class="p">;</span>  <span class="c1">#外部可访问端口</span>
+         <span class="kn">server_name</span> <span class="s">xxxxx</span><span class="p">;</span> <span class="c1">#公网地址</span>
+         <span class="kn">location</span> <span class="s">/</span> <span class="p">{</span>
+                    <span class="kn">include</span>      <span class="s">uwsgi_params</span><span class="p">;</span>  
+                <span class="kn">proxy_pass</span>   <span class="s">http://127.0.0.1:9001</span><span class="p">;</span> <span class="c1">#wsgi端口</span>
+                <span class="kn">uwsgi_param</span> <span class="s">UWSGI_PYHOME</span> <span class="s">xxxx/venv</span><span class="p">;</span> <span class="c1">#flask 虚拟环境目录</span>
+                <span class="kn">uwsgi_param</span> <span class="s">UWSGI_CHDIR</span>  <span class="s">xxxx</span><span class="p">;</span>      <span class="c1"># flask目录</span>
+                <span class="kn">uwsgi_param</span> <span class="s">UWSGI_SCRIPT</span> <span class="s">main:app</span><span class="p">;</span> <span class="c1"># 指定启动程序</span>
+          <span class="p">}</span>
+    <span class="p">}</span>
+<span class="k">}</span>
+</pre></div>
+
+<p>然后重新加载nginx</p>
+<div class="highlight"><pre><span></span>nginx -s reload
+</pre></div>
                 
                   
                 
@@ -357,20 +507,20 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-        
-          <a href="CUDA10深度学习服务器搭建/" title="深度学习服务器搭建" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../数据库原理(2)复习/" title="Database2" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
-                  Next
+                  Previous
                 </span>
-                深度学习服务器搭建
+                Database2
               </span>
             </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
           </a>
+        
         
       </nav>
     </div>
@@ -392,9 +542,9 @@
       
     </div>
     
-      <script src="assets/javascripts/application.245445c6.js"></script>
+      <script src="../assets/javascripts/application.245445c6.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
       
