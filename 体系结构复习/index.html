@@ -1,0 +1,1046 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+    
+    
+      
+        <title>Architecture - 深度瞎扯</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.0284f74d.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#_1" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="深度瞎扯" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              深度瞎扯
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Architecture
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="深度瞎扯" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    深度瞎扯
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Welcome" class="md-nav__link">
+      Welcome
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../CUDA10深度学习服务器搭建/" title="深度学习服务器搭建" class="md-nav__link">
+      深度学习服务器搭建
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../配置Ngrok服务器实现内网穿透/" title="配置Ngrok服务器" class="md-nav__link">
+      配置Ngrok服务器
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../MACOS下安装Pylucene安装过程 && 踩坑记录/" title="MAC下安装Pylucenes踩坑记录" class="md-nav__link">
+      MAC下安装Pylucenes踩坑记录
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      Revision
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Revision
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Architecture
+      </label>
+    
+    <a href="./" title="Architecture" class="md-nav__link md-nav__link--active">
+      Architecture
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="体系结构复习" class="md-nav__link">
+    体系结构复习
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="第一章" class="md-nav__link">
+    第一章
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="第二章" class="md-nav__link">
+    第二章
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="存储系统" class="md-nav__link">
+    存储系统
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="第四章 流水线" class="md-nav__link">
+    第四章 流水线
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11" title="11章：互联网络" class="md-nav__link">
+    11章：互联网络
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="补充" class="md-nav__link">
+    补充
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../数据库原理(2)复习/" title="Database2" class="md-nav__link">
+      Database2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="体系结构复习" class="md-nav__link">
+    体系结构复习
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="第一章" class="md-nav__link">
+    第一章
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="第二章" class="md-nav__link">
+    第二章
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="存储系统" class="md-nav__link">
+    存储系统
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="第四章 流水线" class="md-nav__link">
+    第四章 流水线
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11" title="11章：互联网络" class="md-nav__link">
+    11章：互联网络
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="补充" class="md-nav__link">
+    补充
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Architecture</h1>
+                
+                <h3 id="_1">体系结构复习</h3>
+<h4 id="_2">第一章</h4>
+<ol>
+<li>Amdahl 定理</li>
+</ol>
+<p>Amdahl定理描述了改进**可并行**部分后计算机系统**整体**的加速比例</p>
+<p>​                                   </p>
+<ul>
+<li>书上的定理</li>
+</ul>
+<div>
+<div class="MathJax_Preview">
+\begin{align}
+Fe &amp;= \frac{T_{可并行}}{T_{总}}\\
+Se &amp;= \frac{T_{可并行}}{T'_{可并行}}（T'_{可并行}表示改进后T_{可并行}需要的时间)\\
+&amp;那么:\\
+T'_{总} &amp;= T_{总}((1-Fe) + \frac{Fe}{Se}) ,(去除不可并行的部分，然后乘上可并行部分的加速比例)\\
+&amp;因此改进后整个任务的加速比为:\\
+Sn &amp;= \frac{T_{总}}{T'_{总}} = \frac{1}{(1-Fe) + \frac{Fe}{Se}}
+\end{align}
+</div>
+<script type="math/tex; mode=display">
+\begin{align}
+Fe &= \frac{T_{可并行}}{T_{总}}\\
+Se &= \frac{T_{可并行}}{T'_{可并行}}（T'_{可并行}表示改进后T_{可并行}需要的时间)\\
+&那么:\\
+T'_{总} &= T_{总}((1-Fe) + \frac{Fe}{Se}) ,(去除不可并行的部分，然后乘上可并行部分的加速比例)\\
+&因此改进后整个任务的加速比为:\\
+Sn &= \frac{T_{总}}{T'_{总}} = \frac{1}{(1-Fe) + \frac{Fe}{Se}}
+\end{align}
+</script>
+</div>
+<ol>
+<li>
+<p>概念:为什么发展计算机系统结构</p>
+</li>
+<li>
+<p>体系结构：研究**软硬件功能分配**和**软硬件界面**</p>
+</li>
+<li>组成原理：逻辑实现</li>
+<li>实现：物理实现</li>
+</ol>
+<div class="highlight"><pre><span></span>🌰：
+    确定是否需要乘除指令 -- 系统结构
+    乘除指令用乘法器还是加法器实现 -- 组成原理
+    乘法器或加法器的物理实现 -- 实现
+</pre></div>
+
+<ol>
+<li>
+<p>模拟和仿真</p>
+</li>
+<li>
+<p>模拟：软件实现（宿主机，虚拟机），灵活但是速度慢</p>
+</li>
+<li>
+<p>仿真：硬件实现（宿主机，目标机），速度快但是不灵活</p>
+</li>
+<li>
+<p>CPU性能公式</p>
+</li>
+</ol>
+<div>
+<div class="MathJax_Preview">
+\mathbf{CPI} = \frac{\mathbf{CPU}时钟周期总数}{指令条数} \\
+T_\mathbf{CPU}   = T_{0} \times \sum_{i=1}^n(\mathbf{CPI}_{i}\times \mathbf{I}_{i})\\
+</div>
+<script type="math/tex; mode=display">
+\mathbf{CPI} = \frac{\mathbf{CPU}时钟周期总数}{指令条数} \\
+T_\mathbf{CPU}   = T_{0} \times \sum_{i=1}^n(\mathbf{CPI}_{i}\times \mathbf{I}_{i})\\
+</script>
+</div>
+<p>一些表示衡量指令执行速度的单位</p>
+<p>MIPS(Million instructions per second)，GIPS，TIPS。IPC为Instructions per cycle
+$$
+\begin{align}
+\mathbf{MIPS} &amp;= \frac{指令条数}{指令执行时间\times10^6}=\mathbf{f}\times\mathbf{IPC} \
+\mathbf{GIPS} &amp;= \frac{指令条数}{指令执行时间\times10^9}=\mathbf{f}\times\mathbf{IPC} \
+\mathbf{TIPS} &amp;= \frac{指令条数}{指令执行时间\times10^{12}}=\mathbf{f}\times\mathbf{IPC}\
+\end{align}
+$$</p>
+<ol>
+<li>
+<p>设计方法</p>
+</li>
+<li>
+<p>自上而下：专用计算机</p>
+</li>
+<li>自下而上：通用，效率低</li>
+<li>
+<p>中间开始：合理</p>
+</li>
+<li>
+<p>佛林分类法</p>
+</li>
+</ol>
+<p>按照**指令流和数据流的多倍型特征**进行分类</p>
+<ul>
+<li>指令流：机器执行的指令序列</li>
+<li>数据流：由指令流调用的数据序列</li>
+<li>多倍性：最大可能数</li>
+</ul>
+<p>S：single|M：multiple|I：Instruction|D：Datasteam</p>
+<p>于是分成：</p>
+<p>SISD：标量流水处理机</p>
+<p>SIMD：并行、向量、超流水线</p>
+<p>MIMD：几乎不存在</p>
+<p>MIMD：不存在</p>
+<p>缺点：</p>
+<ul>
+<li>分类粗（SIMD中包含多种）</li>
+<li>
+<p>数据流受指令流控制（MISD不可能存在）</p>
+</li>
+<li>
+<p>冯氏分类</p>
+</li>
+</ul>
+<p>用最大并行度来分类，假设同时处理的字数<span><span class="MathJax_Preview">m</span><script type="math/tex">m</script></span>，字的二进制位数<span><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span>，用<span><span class="MathJax_Preview">(m,n)</span><script type="math/tex">(m,n)</script></span>表示</p>
+<p>缺点是只考虑数据并行</p>
+<ol>
+<li>汉德勒分类</li>
+</ol>
+<p>多层次分类</p>
+<ol>
+<li>补充：计算机系统的层次结构</li>
+</ol>
+<p>共0-6层。</p>
+<ul>
+<li>0-1层CPU功能：硬联逻辑，微程序</li>
+<li>2层软硬件分界：机器语音</li>
+<li>3-5层系统软件：操作系统，汇编语言，高级语言</li>
+<li>
+<p>6层应用软件：应用程序</p>
+</li>
+<li>
+<p>补充：系列机</p>
+</li>
+</ul>
+<p>具有相同的系统结构，但是组成和实现技术不同的计算机系统【性能，价格】</p>
+<ol>
+<li>补充：虚拟机</li>
+</ol>
+<p>由软件实现的机器</p>
+<h4 id="_3">第二章</h4>
+<ol>
+<li>数据类型</li>
+</ol>
+<p>数据表示：计算机硬件能够直接识别，被指令系统直接调用的数据类型</p>
+<p>数据结构：软件实现的数据表示，算法</p>
+<div class="highlight"><pre><span></span>🌰：
+    C = A + B
+    （1）无向量数据表示：需要4条指令
+    （2）有向量数据表示：需要1条指令
+</pre></div>
+
+<ol>
+<li>
+<p>指令组成</p>
+</li>
+<li>
+<p>操作码：操作种类，操作数描述</p>
+</li>
+<li>地址码：地址，地址附加信息，寻址方式</li>
+</ol>
+<p>操作码三种编码方式：</p>
+<ul>
+<li>固定长度</li>
+<li>Huffman：（手工：自上而下编码）</li>
+<li>
+<p>扩展编码：由固定长操作码与Huffman编码结合</p>
+</li>
+<li>
+<p>地址码的优化设计</p>
+</li>
+<li>
+<p>存储容量</p>
+</li>
+<li>
+<p>执行速度</p>
+</li>
+<li>
+<p>指令系统的二八定律</p>
+</li>
+<li>
+<p>简单指令占20%，出现频率80%</p>
+</li>
+<li>
+<p>复杂指令占80%，出现频率20%</p>
+</li>
+<li>
+<p>补充：RISC的定义、特点和细想精华</p>
+</li>
+<li>
+<p>定义：精简指令系统——只保留功能简单，能在一个时钟周期内完成的指令，其他复杂功能用一段子程序实现</p>
+</li>
+<li>
+<p>特点：单周期、固定指令格式、编译优化、减少指令和寻址方式种类|LOAD/STORE，硬布线控制逻辑</p>
+</li>
+<li>
+<p>思想精华：减少<span><span class="MathJax_Preview">\mathbf{CPI}</span><script type="math/tex">\mathbf{CPI}</script></span></p>
+</li>
+</ul>
+<h4 id="_4">存储系统</h4>
+<ol>
+<li>定义</li>
+</ol>
+<div>
+<div class="MathJax_Preview">
+\begin{align}
+\mathbf{price}(便宜 + 贵) &amp;\simeq \mathbf{price}(便宜) \\
+\mathbf{speed}(便宜 + 贵) &amp;\simeq \mathbf{speed}(贵) \\
+\mathbf{capacity}(便宜 + 贵) &amp;\simeq \mathbf{capacity}(便宜) \\
+\end{align}
+</div>
+<script type="math/tex; mode=display">
+\begin{align}
+\mathbf{price}(便宜 + 贵) &\simeq \mathbf{price}(便宜) \\
+\mathbf{speed}(便宜 + 贵) &\simeq \mathbf{speed}(贵) \\
+\mathbf{capacity}(便宜 + 贵) &\simeq \mathbf{capacity}(便宜) \\
+\end{align}
+</script>
+</div>
+<ol>
+<li>访问效率</li>
+</ol>
+<div>
+<div class="MathJax_Preview">
+\mathbf{e} = \frac{T_{1}}{T} = \frac{T_{1}}{H \times T_{!} + (1-H)\times T_{2}}
+</div>
+<script type="math/tex; mode=display">
+\mathbf{e} = \frac{T_{1}}{T} = \frac{T_{1}}{H \times T_{!} + (1-H)\times T_{2}}
+</script>
+</div>
+<ol>
+<li>预取技术提高访问率</li>
+</ol>
+<div>
+<div class="MathJax_Preview">
+\mathbf{e'} = \frac{\mathbf{e} -1 + \mathbf{n}}{\mathbf{n}},\mathbf{n} = 块大小\times 重复利用率
+</div>
+<script type="math/tex; mode=display">
+\mathbf{e'} = \frac{\mathbf{e} -1 + \mathbf{n}}{\mathbf{n}},\mathbf{n} = 块大小\times 重复利用率
+</script>
+</div>
+<ol>
+<li>
+<p>虚拟存储器加快内部地址变换的方法</p>
+</li>
+<li>
+<p>页表级数</p>
+</li>
+<li>
+<div>
+<div class="MathJax_Preview">
+  g = \left \lfloor \frac{\log_{2}N_{v}-\log_{2}N_{p}}
+  {\log_{2}N_{p}-\log_{2}N_{d}}  \right \rfloor\\
+  N_{v}为虚拟存储空间大小，N_{p}为页面大小，N_{d}为一个页表存储字大小
+  </div>
+<script type="math/tex; mode=display">
+  g = \left \lfloor \frac{\log_{2}N_{v}-\log_{2}N_{p}}
+  {\log_{2}N_{p}-\log_{2}N_{d}}  \right \rfloor\\
+  N_{v}为虚拟存储空间大小，N_{p}为页面大小，N_{d}为一个页表存储字大小
+  </script>
+</div>
+</li>
+<li>
+<p>方法：</p>
+</li>
+<li>
+<p>目录表</p>
+</li>
+<li>
+<p>快慢表</p>
+</li>
+<li>
+<p>散列函数</p>
+</li>
+<li>
+<p>堆栈型算法</p>
+</li>
+</ol>
+<p>随着分配给程序的主存页面增加，主存的命中率也提高，至少不下降</p>
+<ol>
+<li>
+<p>Cache存储系统地址印映像及变换方法</p>
+</li>
+<li>
+<p>全相连：效率高，价格贵</p>
+</li>
+<li>直接相连：效率低，价格低</li>
+<li>
+<p>组相连：n = 1 时为直接相连，n = N时为全相连</p>
+</li>
+<li>
+<p>cache替换算法</p>
+</li>
+<li>
+<p>轮换法：替换计数器最大的</p>
+</li>
+<li>
+<p>LRU</p>
+</li>
+<li>
+<p>cache的一致性</p>
+</li>
+<li>
+<p>写直达</p>
+</li>
+<li>
+<p>写回法：替换时写回</p>
+</li>
+<li>
+<p>补充：存储器访问</p>
+</li>
+<li>
+<p>高位交叉：提高容量</p>
+</li>
+<li>低位交叉：提高访问速度，解决访问冲突</li>
+</ol>
+<h4 id="_5">第四章 流水线</h4>
+<ol>
+<li>
+<p>先行控制技术</p>
+</li>
+<li>
+<p>缓冲技术</p>
+</li>
+<li>
+<p>预处理技术</p>
+</li>
+<li>
+<p>先行指令缓冲栈的作用</p>
+</li>
+</ol>
+<p>只要指令缓冲栈没有满，就自动发出取指令的请求</p>
+<ol>
+<li>
+<p>流水线特点</p>
+</li>
+<li>
+<p>只有连续提供同类任务才能发挥流水线效率</p>
+</li>
+<li>每个流水段都要设置一个流水寄存器</li>
+<li>
+<p>各流水段的水间应尽量想等</p>
+</li>
+<li>
+<p>流水线性能分析指标</p>
+</li>
+<li>
+<p>吞吐率(Though Put)
+  $$
+  \begin{align}
+  \mathbf{T}<em>{p} &amp;= \frac{\mathbf{n}}{\mathbf{T}</em>{k}}\
+  \mathbf{T}<em>{k} &amp;= (k+n-1)\cdot \triangle t,k为流水线段数,n为任务数\
+  \mathbf{T}</em>{p}\max &amp;= \frac{1}{\triangle t} 
+  \end{align}
+  $$</p>
+</li>
+<li>
+<p>加速比</p>
+</li>
+</ol>
+<div>
+<div class="MathJax_Preview">
+\begin{align}
+S &amp;= \frac{T_0}{T_k} = \frac{k \cdot n \cdot \triangle t}{(k+n-1)\cdot \triangle t} \\
+S\max &amp;= k
+\end{align}
+</div>
+<script type="math/tex; mode=display">
+\begin{align}
+S &= \frac{T_0}{T_k} = \frac{k \cdot n \cdot \triangle t}{(k+n-1)\cdot \triangle t} \\
+S\max &= k
+\end{align}
+</script>
+</div>
+<ul>
+<li>效率</li>
+</ul>
+<div>
+<div class="MathJax_Preview">
+\begin{align}
+E &amp;= \frac{顺序执行的时空区}{k个流水段的总时空区} = \frac{T_{0}}{k\cdot T_{k}} \\
+&amp; = \frac{k \cdot n \cdot \triangle t}{k\cdot(k+n-1)\cdot \triangle t} \\
+&amp; = \frac{n}{k+n-1}
+\end{align}
+</div>
+<script type="math/tex; mode=display">
+\begin{align}
+E &= \frac{顺序执行的时空区}{k个流水段的总时空区} = \frac{T_{0}}{k\cdot T_{k}} \\
+& = \frac{k \cdot n \cdot \triangle t}{k\cdot(k+n-1)\cdot \triangle t} \\
+& = \frac{n}{k+n-1}
+\end{align}
+</script>
+</div>
+<ul>
+<li>
+<p>小节：吞吐率看空间，加速比看时间，效率结合起来看</p>
+</li>
+<li>
+<p>流水线消除瓶颈</p>
+</li>
+<li>
+<p>将瓶颈部分再细分</p>
+</li>
+<li>
+<p>将瓶颈部分重复设置</p>
+</li>
+<li>
+<p>乱序流动中的数据相关（冒险，竞争）</p>
+</li>
+<li>
+<p>写读相关</p>
+</li>
+<li>读写相关</li>
+<li>写写相关</li>
+<li>
+<p>解决：建立相关专用通路（ByPass）</p>
+</li>
+<li>
+<p>多流水线调度策略</p>
+</li>
+<li>
+<p>顺序发射顺序完成</p>
+</li>
+<li>顺序发射乱序完成</li>
+<li>
+<p>乱序发射乱序完成</p>
+</li>
+<li>
+<p><strong>超标量处理机采用的是空间并行性。</strong></p>
+</li>
+</ul>
+<p><strong>超流水线处理机采用的是时间并行性。</strong>：每隔1/n个时钟周期发射一条指令</p>
+<h4 id="11">11章：互联网络</h4>
+<ol>
+<li>方体置换函数：形成正方体</li>
+</ol>
+<p>$ Cube_{0}$ 表示第 0 位取反 其他位不变 如 8 个节点
+$$
+{Cube_{2}(b_{2}b_{1}b_{0})=\overline{b}<em>{2}b</em>{1}b_{0}}
+$$</p>
+<ol>
+<li>混洗置换 Shuffle：编码移位</li>
+</ol>
+<div>
+<div class="MathJax_Preview">
+Shuffle(b_{n-1}b_{n-2}…b_{1}b_{0})=(b_{n-2}…b_{1}b_{0}b_{n-1})；
+</div>
+<script type="math/tex; mode=display">
+Shuffle(b_{n-1}b_{n-2}…b_{1}b_{0})=(b_{n-2}…b_{1}b_{0}b_{n-1})；
+</script>
+</div>
+<ol>
+<li>蝶式置换 Butterfly：编码**位**交换</li>
+</ol>
+<div>
+<div class="MathJax_Preview">
+\beta (b_{n-1}b_{n-2}…b_{1}b_{0})=(b_{0}b_{n-2}…b_{1}b_{n-1})；
+</div>
+<script type="math/tex; mode=display">
+\beta (b_{n-1}b_{n-2}…b_{1}b_{0})=(b_{0}b_{n-2}…b_{1}b_{n-1})；
+</script>
+</div>
+<ul>
+<li>
+<p>子蝶式：<span><span class="MathJax_Preview">\beta_{(k)}</span><script type="math/tex">\beta_{(k)}</script></span>用<span><span class="MathJax_Preview">b_{0}</span><script type="math/tex">b_{0}</script></span>和<span><span class="MathJax_Preview">b_{k}</span><script type="math/tex">b_{k}</script></span>交换</p>
+</li>
+<li>
+<p>超蝶式：<span><span class="MathJax_Preview">\beta_{(k)}</span><script type="math/tex">\beta_{(k)}</script></span>用<span><span class="MathJax_Preview">b_{n-k-1}</span><script type="math/tex">b_{n-k-1}</script></span>和<span><span class="MathJax_Preview">b_{n-1}</span><script type="math/tex">b_{n-1}</script></span>交换</p>
+</li>
+<li>
+<p>移数置换：
+$$
+   a(X) = (X + k) \% N
+   $$</p>
+</li>
+<li>
+<p>特例：加减<span><span class="MathJax_Preview">2^i</span><script type="math/tex">2^i</script></span>置换</p>
+</li>
+<li>
+<div>
+<div class="MathJax_Preview">
+     PM2I_{+i}(j) = (j+2^i) \% N \\
+     PM2I_{-i}(j) = (j-2^i) \% N \\
+     </div>
+<script type="math/tex; mode=display">
+     PM2I_{+i}(j) = (j+2^i) \% N \\
+     PM2I_{-i}(j) = (j-2^i) \% N \\
+     </script>
+</div>
+</li>
+</ul>
+<h4 id="_6">补充</h4>
+<ol>
+<li>
+<p>SIMD 定义 描述 特点</p>
+</li>
+<li>
+<p>定义：单指令多数据流，是单一控制部件下多个处理单元构成的阵列</p>
+</li>
+<li>
+<p>MIMD 定义 描述</p>
+</li>
+<li>
+<p>定义：多指令多数据流，比如多处理机系统</p>
+</li>
+<li>
+<p>并行性等级的划分(从数据处理角度)</p>
+</li>
+<li>
+<p>字串位串：同一字同一位</p>
+</li>
+<li>字串位并：同一字所以位</li>
+<li>字并位串：多个字同一位</li>
+<li>
+<p>字并位并：多个字多个位</p>
+</li>
+<li>
+<p>并行性等级</p>
+</li>
+<li>
+<p>指令内部并行</p>
+</li>
+<li>指令间并行</li>
+<li>任务级或过程级</li>
+<li>作业或程序级</li>
+</ol>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../MACOS下安装Pylucene安装过程 && 踩坑记录/" title="MAC下安装Pylucenes踩坑记录" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                MAC下安装Pylucenes踩坑记录
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../数据库原理(2)复习/" title="Database2" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Database2
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.245445c6.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>
