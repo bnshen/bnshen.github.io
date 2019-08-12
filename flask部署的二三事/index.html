@@ -460,12 +460,15 @@
 <span class="na">processes</span> <span class="o">=</span> <span class="s">4</span>
 <span class="c1"># 线程数</span>
 <span class="na">threads</span> <span class="o">=</span> <span class="s">2</span>
-<span class="c1">#状态检测地址</span>
-<span class="na">stats</span> <span class="o">=</span> <span class="s">127.0.0.1:919</span>
+<span class="c1">#状态检和pid</span>
+<span class="na">stats</span><span class="o">=</span><span class="s">%(chdir)/uwsgi.status</span>
+<span class="na">pidfile</span><span class="o">=</span><span class="s">%(chdir)/uwsgi.pid</span>
 </pre></div>
 
 <p>启动wsgi服务器</p>
-<div class="highlight"><pre><span></span>wsgi --ini config.ini
+<div class="highlight"><pre><span></span>uwsgi --ini config.ini
+uwsgi -d --ini config.ini <span class="c1">#守护进程</span>
+uwsgi --reload uwsgi.pid <span class="c1">#gracefully reload</span>
 </pre></div>
 
 <h4 id="nginx">配置NGINX代理服务器</h4>
