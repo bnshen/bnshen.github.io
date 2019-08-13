@@ -338,6 +338,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#nginxhttphttps" title="NGINX同时配置http和https" class="md-nav__link">
+    NGINX同时配置http和https
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -402,6 +409,13 @@
           <li class="md-nav__item">
   <a href="#nginx" title="配置NGINX代理服务器" class="md-nav__link">
     配置NGINX代理服务器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nginxhttphttps" title="NGINX同时配置http和https" class="md-nav__link">
+    NGINX同时配置http和https
   </a>
   
 </li>
@@ -485,6 +499,20 @@ uwsgi --reload uwsgi.pid <span class="c1">#gracefully reload</span>
           <span class="p">}</span>
     <span class="p">}</span>
 <span class="k">}</span>
+</pre></div>
+
+<h4 id="nginxhttphttps">NGINX同时配置http和https</h4>
+<div class="highlight"><pre><span></span><span class="k">server</span> <span class="p">{</span>
+    <span class="kn">listen</span>              <span class="mi">80</span><span class="p">;</span>
+    <span class="kn">listen</span>              <span class="mi">443</span> <span class="s">ssl</span><span class="p">;</span>
+    <span class="kn">server_name</span>         <span class="s">xxx</span><span class="p">;</span>
+    <span class="kn">ssl_certificate</span>     <span class="s">xxx.crt</span><span class="p">;</span>
+    <span class="kn">ssl_certificate_key</span> <span class="s">xxx.key</span><span class="p">;</span>
+    <span class="kn">location</span> <span class="s">/</span> <span class="p">{</span>
+                <span class="kn">include</span>      <span class="s">uwsgi_params</span><span class="p">;</span>
+                <span class="kn">proxy_pass</span>   <span class="s">http://127.0.0.1:xxxx</span><span class="p">;</span> <span class="c1">#wsgi端口</span>
+          <span class="p">}</span>
+<span class="p">}</span>
 </pre></div>
 
 <p>然后重新加载nginx</p>
