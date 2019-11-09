@@ -1,65 +1,29 @@
 
+<!DOCTYPE doctype html>
 
-
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-      
-      
-      
-      
-        <meta name="lang:clipboard.copy" content="Copy to clipboard">
-      
-        <meta name="lang:clipboard.copied" content="Copied to clipboard">
-      
-        <meta name="lang:search.language" content="en">
-      
-        <meta name="lang:search.pipeline.stopwords" content="True">
-      
-        <meta name="lang:search.pipeline.trimmer" content="True">
-      
-        <meta name="lang:search.result.none" content="No matching documents">
-      
-        <meta name="lang:search.result.one" content="1 matching document">
-      
-        <meta name="lang:search.result.other" content="# matching documents">
-      
-        <meta name="lang:search.tokenizer" content="[\s\-]+">
-      
-      <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
-    
-    
-      
-        <title>6.824 Lab2 - 深度瞎扯</title>
-      
-    
-    
-      <link rel="stylesheet" href="../assets/stylesheets/application.0284f74d.css">
-      
-      
-    
-    
-      <script src="../assets/javascripts/modernizr.74668098.js"></script>
-    
-    
-      
-        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
-      
-    
-    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
-    
-    
-    
-      
-        
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="ie=edge" http-equiv="x-ua-compatible"/>
+<meta content="Copy to clipboard" name="lang:clipboard.copy"/>
+<meta content="Copied to clipboard" name="lang:clipboard.copied"/>
+<meta content="en" name="lang:search.language"/>
+<meta content="True" name="lang:search.pipeline.stopwords"/>
+<meta content="True" name="lang:search.pipeline.trimmer"/>
+<meta content="No matching documents" name="lang:search.result.none"/>
+<meta content="1 matching document" name="lang:search.result.one"/>
+<meta content="# matching documents" name="lang:search.result.other"/>
+<meta content="[\s\-]+" name="lang:search.tokenizer"/>
+<link href="../assets/images/favicon.png" rel="shortcut icon"/>
+<meta content="mkdocs-1.0.4, mkdocs-material-4.4.0" name="generator"/>
+<title>6.824 Lab2 - 深度瞎扯</title>
+<link href="../assets/stylesheets/application.0284f74d.css" rel="stylesheet"/>
+<script src="../assets/javascripts/modernizr.74668098.js"></script>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&amp;display=fallback" rel="stylesheet"/>
+<style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+<link href="../assets/fonts/material-icons.css" rel="stylesheet"/>
 <script>
   window.ga = window.ga || function() {
     (ga.q = ga.q || []).push(arguments)
@@ -82,506 +46,273 @@
     }
   })
 </script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
-      
-    
-    
-  </head>
-  
-    <body dir="ltr">
-  
-    <svg class="md-svg">
-      <defs>
-        
-        
-      </defs>
-    </svg>
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
-    
-      <a href="#6824-distributed-systems-engineering" tabindex="1" class="md-skip">
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+</head>
+<body dir="ltr">
+<svg class="md-svg">
+<defs>
+</defs>
+</svg>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+<a class="md-skip" href="#6824-distributed-systems-engineering" tabindex="1">
         Skip to content
       </a>
-    
-    
-      <header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid">
-    <div class="md-flex">
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <a href=".." title="深度瞎扯" class="md-header-nav__button md-logo">
-          
-            <i class="md-icon"></i>
-          
-        </a>
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
-      </div>
-      <div class="md-flex__cell md-flex__cell--stretch">
-        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
-          
-            <span class="md-header-nav__topic">
+<header class="md-header" data-md-component="header">
+<nav class="md-header-nav md-grid">
+<div class="md-flex">
+<div class="md-flex__cell md-flex__cell--shrink">
+<a class="md-header-nav__button md-logo" href=".." title="深度瞎扯">
+<i class="md-icon"></i>
+</a>
+</div>
+<div class="md-flex__cell md-flex__cell--shrink">
+<label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+</div>
+<div class="md-flex__cell md-flex__cell--stretch">
+<div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+<span class="md-header-nav__topic">
               深度瞎扯
             </span>
-            <span class="md-header-nav__topic">
+<span class="md-header-nav__topic">
               
                 6.824 Lab2
               
             </span>
-          
-        </div>
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        
-          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-          
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
-      <label class="md-icon md-search__icon" for="__search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
-        &#xE5CD;
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
-          <div class="md-search-result__meta">
-            Type to start searching
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
-        
-      </div>
-      
-    </div>
-  </nav>
+</div>
+<div class="md-flex__cell md-flex__cell--shrink">
+</div>
+</div>
+</nav>
 </header>
-    
-    <div class="md-container">
-      
-        
-      
-      
-      <main class="md-main">
-        <div class="md-main__inner md-grid" data-md-component="container">
-          
-            
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" data-md-level="0">
-  <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href=".." title="深度瞎扯" class="md-nav__button md-logo">
-      
-        <i class="md-icon"></i>
-      
-    </a>
+<div class="md-container">
+<main class="md-main">
+<div class="md-main__inner md-grid" data-md-component="container">
+<div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title md-nav__title--site" for="__drawer">
+<a class="md-nav__button md-logo" href=".." title="深度瞎扯">
+<i class="md-icon"></i>
+</a>
     深度瞎扯
   </label>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href=".." title="Welcome" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href=".." title="Welcome">
       Welcome
     </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
-    
-    <label class="md-nav__link" for="nav-2">
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" id="nav-2" type="checkbox"/>
+<label class="md-nav__link" for="nav-2">
       归档
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
+<nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+<label class="md-nav__title" for="nav-2">
         归档
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../CUDA10深度学习服务器搭建/" title="深度学习服务器搭建" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../CUDA10深度学习服务器搭建/" title="深度学习服务器搭建">
       深度学习服务器搭建
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../配置Ngrok服务器实现内网穿透/" title="配置Ngrok服务器" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../配置Ngrok服务器实现内网穿透/" title="配置Ngrok服务器">
       配置Ngrok服务器
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../MACOS下安装Pylucene安装过程 && 踩坑记录/" title="MAC下安装Pylucenes踩坑记录" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../MACOS下安装Pylucene安装过程 &amp;&amp; 踩坑记录/" title="MAC下安装Pylucenes踩坑记录">
       MAC下安装Pylucenes踩坑记录
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
-    
-    <label class="md-nav__link" for="nav-2-4">
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" id="nav-2-4" type="checkbox"/>
+<label class="md-nav__link" for="nav-2-4">
       Revision
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-4">
+<nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+<label class="md-nav__title" for="nav-2-4">
         Revision
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../体系结构复习/" title="Architecture" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../体系结构复习/" title="Architecture">
       Architecture
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../数据库原理(2)复习/" title="Database2" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../数据库原理(2)复习/" title="Database2">
       Database2
     </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5">
-    
-    <label class="md-nav__link" for="nav-2-5">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-5" id="nav-2-5" type="checkbox"/>
+<label class="md-nav__link" for="nav-2-5">
       部署那些事
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-5">
+<nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+<label class="md-nav__title" for="nav-2-5">
         部署那些事
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../flask部署的二三事/" title="Flask部署" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../flask部署的二三事/" title="Flask部署">
       Flask部署
     </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
-    
-    <label class="md-nav__link" for="nav-3">
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-toggle md-nav__toggle" data-md-toggle="nav-3" id="nav-3" type="checkbox"/>
+<label class="md-nav__link" for="nav-3">
       近期日志
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
+<nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+<label class="md-nav__title" for="nav-3">
         近期日志
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-toggle md-nav__toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
         6.824 Lab2
       </label>
-    
-    <a href="./" title="6.824 Lab2" class="md-nav__link md-nav__link--active">
+<a class="md-nav__link md-nav__link--active" href="./" title="6.824 Lab2">
       6.824 Lab2
     </a>
-    
-      
 <nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#6824-distributed-systems-engineering" title="6.824: Distributed Systems Engineering" class="md-nav__link">
+<label class="md-nav__title" for="__toc">Table of contents</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#6824-distributed-systems-engineering" title="6.824: Distributed Systems Engineering">
     6.824: Distributed Systems Engineering
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#lab2-raft" title="Lab2: Raft" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#lab2-raft" title="Lab2: Raft">
     Lab2: Raft
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_1" title="感受" class="md-nav__link">
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1" title="感受">
     感受
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" title="难点和坑点" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2" title="难点和坑点">
     难点和坑点
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#from-the-guild" title="From THE GUILD" class="md-nav__link">
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#from-the-guild" title="From THE GUILD">
     From THE GUILD
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#from-practice" title="From Practice" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#from-practice" title="From Practice">
     From Practice
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" title="时间" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3" title="时间">
     时间
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
+</ul>
 </nav>
-    
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../6.824 Lab3A/" title="6.824 Lab3A" class="md-nav__link">
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../6.824 Lab3A/" title="6.824 Lab3A">
       6.824 Lab3A
     </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-  </ul>
+</li>
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
 <nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#6824-distributed-systems-engineering" title="6.824: Distributed Systems Engineering" class="md-nav__link">
+<label class="md-nav__title" for="__toc">Table of contents</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#6824-distributed-systems-engineering" title="6.824: Distributed Systems Engineering">
     6.824: Distributed Systems Engineering
   </a>
-  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#lab2-raft" title="Lab2: Raft" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#lab2-raft" title="Lab2: Raft">
     Lab2: Raft
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_1" title="感受" class="md-nav__link">
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1" title="感受">
     感受
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" title="难点和坑点" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2" title="难点和坑点">
     难点和坑点
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#from-the-guild" title="From THE GUILD" class="md-nav__link">
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#from-the-guild" title="From THE GUILD">
     From THE GUILD
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#from-practice" title="From Practice" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#from-practice" title="From Practice">
     From Practice
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" title="时间" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3" title="时间">
     时间
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          <div class="md-content">
-            <article class="md-content__inner md-typeset">
-              
-                
-                
-                  <h1>6.824 Lab2</h1>
-                
-                <h2 id="6824-distributed-systems-engineering">6.824: Distributed Systems Engineering</h2>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content">
+<article class="md-content__inner md-typeset">
+<h1>6.824 Lab2</h1>
+<h2 id="6824-distributed-systems-engineering">6.824: Distributed Systems Engineering</h2>
 <h2 id="lab2-raft">Lab2: Raft</h2>
 <p>使用的是<a href="https://pdos.csail.mit.edu/6.824/schedule.html">2018 Spring</a>的<a href="https://pdos.csail.mit.edu/6.824/labs/lab-raft.html">raft lab</a>版本</p>
 <p>摘要：本文简单写一个完成<a href="https://pdos.csail.mit.edu/6.824/labs/lab-raft.html">6.824 lab 2</a>的一些感受，并简单说一下实现raft的难点和需要注意的地方。部分地方会参考<a href="https://thesquareplanet.com/blog/students-guide-to-raft/">Student's Guide to Raft</a>，大部分资料来自<a href="https://pdos.csail.mit.edu/6.824/papers/raft-extended.pdf">Raft Paper</a>，一个非常好的可视化<a href="http://thesecretlivesofdata.com/raft/">教程</a>，一个官方的<a href="https://raft.github.io/">Raft Visualization</a>。</p>
@@ -594,63 +325,62 @@
 <p>所以在一周后进行了重写，也就是现在看到的结果。</p>
 <p>重写相对比较顺利，一天时间完成了Test 2A，第二天完成了Test 2B、Test 2C，代码结构也变得更为清晰，不过仍然是将近80%的时间花在了调试上。在写这篇文章前又重读了<a href="https://thesquareplanet.com/blog/students-guide-to-raft/">Student's Guide to Raft</a>，发现确实很多坑都踩上了，所以在实现时还是要好好读这篇文章。</p>
 <p>实验指导书要求最终三个Test总时间不能超过4分钟，我的实现最终花了2分多钟跑完了。</p>
-<div class="highlight"><pre><span></span>$ go <span class="nb">test</span> -run <span class="m">2</span>
-Test <span class="o">(</span>2A<span class="o">)</span>: initial election ...
+<pre><code class="shell">$ go test -run 2
+Test (2A): initial election ...
 labgob warning: Decoding into a non-default variable/field Index may not work
-  ... Passed --   <span class="m">3</span>.0  <span class="m">3</span>  <span class="m">118</span>    <span class="m">0</span>
-Test <span class="o">(</span>2A<span class="o">)</span>: election after network failure ...
-  ... Passed --   <span class="m">4</span>.6  <span class="m">3</span>  <span class="m">256</span>    <span class="m">0</span>
-Test <span class="o">(</span>2B<span class="o">)</span>: basic agreement ...
-  ... Passed --   <span class="m">0</span>.5  <span class="m">5</span>   <span class="m">32</span>    <span class="m">3</span>
-Test <span class="o">(</span>2B<span class="o">)</span>: agreement despite follower disconnection ...
-  ... Passed --   <span class="m">5</span>.8  <span class="m">3</span>  <span class="m">240</span>    <span class="m">8</span>
-Test <span class="o">(</span>2B<span class="o">)</span>: no agreement <span class="k">if</span> too many followers disconnect ...
-  ... Passed --   <span class="m">3</span>.4  <span class="m">5</span>  <span class="m">380</span>    <span class="m">3</span>
-Test <span class="o">(</span>2B<span class="o">)</span>: concurrent Start<span class="o">()</span>s ...
-  ... Passed --   <span class="m">0</span>.7  <span class="m">3</span>   <span class="m">22</span>    <span class="m">6</span>
-Test <span class="o">(</span>2B<span class="o">)</span>: rejoin of partitioned leader ...
-  ... Passed --   <span class="m">5</span>.9  <span class="m">3</span>  <span class="m">350</span>    <span class="m">4</span>
-Test <span class="o">(</span>2B<span class="o">)</span>: leader backs up quickly over incorrect follower logs ...
-  ... Passed --  <span class="m">15</span>.4  <span class="m">5</span> <span class="m">2627</span>  <span class="m">102</span>
-Test <span class="o">(</span>2B<span class="o">)</span>: RPC counts aren<span class="err">&#39;</span>t too high ...
-  ... Passed --   <span class="m">2</span>.2  <span class="m">3</span>   <span class="m">84</span>   <span class="m">12</span>
-Test <span class="o">(</span>2C<span class="o">)</span>: basic persistence ...
-  ... Passed --   <span class="m">3</span>.4  <span class="m">3</span>  <span class="m">130</span>    <span class="m">6</span>
-Test <span class="o">(</span>2C<span class="o">)</span>: more persistence ...
-  ... Passed --  <span class="m">16</span>.9  <span class="m">5</span> <span class="m">1840</span>   <span class="m">17</span>
-Test <span class="o">(</span>2C<span class="o">)</span>: partitioned leader and one follower crash, leader restarts ...
-  ... Passed --   <span class="m">2</span>.9  <span class="m">3</span>   <span class="m">68</span>    <span class="m">4</span>
-Test <span class="o">(</span>2C<span class="o">)</span>: Figure <span class="m">8</span> ...
-  ... Passed --  <span class="m">31</span>.8  <span class="m">5</span> <span class="m">1719</span>   <span class="m">15</span>
-Test <span class="o">(</span>2C<span class="o">)</span>: unreliable agreement ...
-  ... Passed --   <span class="m">5</span>.5  <span class="m">5</span>  <span class="m">424</span>  <span class="m">246</span>
-Test <span class="o">(</span>2C<span class="o">)</span>: Figure <span class="m">8</span> <span class="o">(</span>unreliable<span class="o">)</span> ...
-  ... Passed --  <span class="m">28</span>.7  <span class="m">5</span> <span class="m">5300</span>   <span class="m">42</span>
-Test <span class="o">(</span>2C<span class="o">)</span>: churn ...
-  ... Passed --  <span class="m">16</span>.4  <span class="m">5</span> <span class="m">2140</span>  <span class="m">155</span>
-Test <span class="o">(</span>2C<span class="o">)</span>: unreliable churn ...
-  ... Passed --  <span class="m">16</span>.4  <span class="m">5</span> <span class="m">1863</span>  <span class="m">215</span>
+  ... Passed --   3.0  3  118    0
+Test (2A): election after network failure ...
+  ... Passed --   4.6  3  256    0
+Test (2B): basic agreement ...
+  ... Passed --   0.5  5   32    3
+Test (2B): agreement despite follower disconnection ...
+  ... Passed --   5.8  3  240    8
+Test (2B): no agreement if too many followers disconnect ...
+  ... Passed --   3.4  5  380    3
+Test (2B): concurrent Start()s ...
+  ... Passed --   0.7  3   22    6
+Test (2B): rejoin of partitioned leader ...
+  ... Passed --   5.9  3  350    4
+Test (2B): leader backs up quickly over incorrect follower logs ...
+  ... Passed --  15.4  5 2627  102
+Test (2B): RPC counts aren't too high ...
+  ... Passed --   2.2  3   84   12
+Test (2C): basic persistence ...
+  ... Passed --   3.4  3  130    6
+Test (2C): more persistence ...
+  ... Passed --  16.9  5 1840   17
+Test (2C): partitioned leader and one follower crash, leader restarts ...
+  ... Passed --   2.9  3   68    4
+Test (2C): Figure 8 ...
+  ... Passed --  31.8  5 1719   15
+Test (2C): unreliable agreement ...
+  ... Passed --   5.5  5  424  246
+Test (2C): Figure 8 (unreliable) ...
+  ... Passed --  28.7  5 5300   42
+Test (2C): churn ...
+  ... Passed --  16.4  5 2140  155
+Test (2C): unreliable churn ...
+  ... Passed --  16.4  5 1863  215
 PASS
-ok      raft    <span class="m">164</span>.123s
-</pre></div>
-
+ok      raft    164.123s
+</code></pre>
 <h3 id="_2">难点和坑点</h3>
 <h4 id="from-the-guild">From THE GUILD</h4>
 <blockquote>
 <p>In fact, Figure 2 is extremely precise, and every single statement it makes should be treated, in specification terms, as <strong>MUST</strong>, not as <strong>SHOULD</strong>. For example, you might reasonably reset a peer’s election timer whenever you receive an <code>AppendEntries</code> or <code>RequestVote</code> RPC, as both indicate that some other peer either thinks it’s the leader, or is trying to become the leader. Intuitively, this means that we shouldn’t be interfering. However, if you read Figure 2 carefully, it says:</p>
 </blockquote>
 <p>虽然说论文中Figure 2讲的比较详细，但是仍然有几点不足。第一，没有涵盖所有细节，比如何定义log 是不是 up-to-date等等。第二，并不是所有的要求都集中在一个Section中，比如在实现RequestVote RPC或者 AppendEntries RPC时，你不仅仅要考虑这两个RPC的要求，还要考虑发送者或接受者作为"follwer, candidate, leader"的区别，每一种属性都有不同的要求，同时对于三种身份还有共同的要求。 第三，图2并没有讲清楚所有的数据结构，具体实现时候需要增加很多属性，决定某些属性的类型。</p>
-<hr />
+<hr/>
 <blockquote>
 <p>If <code>commitIndex &gt; lastApplied</code> <em>at any point</em> during execution, you should apply a particular log entry. It is not crucial that you do it straight away (for example, in the <code>AppendEntries</code> RPC handler), but it <em>is</em> important that you ensure that this application is only done by one entity. Specifically, you will need to either have a dedicated “applier”, or to lock around these applies, so that some other routine doesn’t also detect that entries need to be applied and also tries to apply.</p>
 </blockquote>
 <p>论文里并没有谈到如何去apply log，事实上在实现时需要在Go中新开一个线程来提交log，这个往往会在刚开始时造成困难</p>
-<hr />
+<hr/>
 <blockquote>
 <p>If a leader sends out an <code>AppendEntries</code> RPC, and it is rejected, but <em>not because of log inconsistency</em> (this can only happen if our term has passed), then you should immediately step down, and <em>not</em> update <code>nextIndex</code>. If you do, you could race with the resetting of <code>nextIndex</code> if you are re-elected immediately.</p>
 </blockquote>
 <p>这也是我后期发现的一个小问题，AE RPC返回False并不一定是log不match，还有可能是这轮已经结束了，所以不要看到false就nextIndex -= 1。</p>
-<hr />
+<hr/>
 <blockquote>
 <p>A leader is not allowed to update <code>commitIndex</code> to somewhere in a <em>previous</em> term (or, for that matter, a future term). Thus, as the rule says, you specifically need to check that <code>log[N].term == currentTerm</code>. This is because Raft leaders cannot be sure an entry is actually committed (and will not ever be changed in the future) if it’s not from their current term. This is illustrated by Figure 8 in the paper.</p>
 </blockquote>
@@ -660,81 +390,58 @@ ok      raft    <span class="m">164</span>.123s
 <p>另外，熟悉<code>Golang</code>非常重要，这份<a href="http://tour.golang.org/">Go tour</a>非常好用，稍微会点C/C++读完基本就达到可以实现Lab 2的地步了，不过如果你已经做过<a href="https://pdos.csail.mit.edu/6.824/labs/lab-1.html">Lab 1- MapReduce</a>，那么你应该已经对Go比较熟悉了。</p>
 <h4 id="_3">时间</h4>
 <p>写于2019年11月4日</p>
-                
-                  
-                
-              
-              
-                
-
-
-              
-            </article>
-          </div>
-        </div>
-      </main>
-      
-        
+</article>
+</div>
+</div>
+</main>
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid">
-        
-          <a href="../flask部署的二三事/" title="Flask部署" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
-            </div>
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
+<div class="md-footer-nav">
+<nav class="md-footer-nav__inner md-grid">
+<a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href="../flask部署的二三事/" rel="prev" title="Flask部署">
+<div class="md-flex__cell md-flex__cell--shrink">
+<i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+</div>
+<div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+<span class="md-flex__ellipsis">
+<span class="md-footer-nav__direction">
                   Previous
                 </span>
                 Flask部署
               </span>
-            </div>
-          </a>
-        
-        
-          <a href="../6.824 Lab3A/" title="6.824 Lab3A" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
+</div>
+</a>
+<a class="md-flex md-footer-nav__link md-footer-nav__link--next" href="../6.824 Lab3A/" rel="next" title="6.824 Lab3A">
+<div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+<span class="md-flex__ellipsis">
+<span class="md-footer-nav__direction">
                   Next
                 </span>
                 6.824 Lab3A
               </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
+</div>
+<div class="md-flex__cell md-flex__cell--shrink">
+<i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+</div>
+</a>
+</nav>
+</div>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
         
         powered by
         <a href="https://www.mkdocs.org">MkDocs</a>
         and
         <a href="https://squidfunk.github.io/mkdocs-material/">
           Material for MkDocs</a>
-      </div>
-      
-    </div>
-  </div>
+</div>
+</div>
+</div>
 </footer>
-      
-    </div>
-    
-      <script src="../assets/javascripts/application.245445c6.js"></script>
-      
-      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-      
-    
-  </body>
+</div>
+<script src="../assets/javascripts/application.245445c6.js"></script>
+<script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script src="https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js"></script>
+</body>
 </html>

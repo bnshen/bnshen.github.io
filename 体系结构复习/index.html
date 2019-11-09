@@ -1,65 +1,29 @@
 
+<!DOCTYPE doctype html>
 
-
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-      
-      
-      
-      
-        <meta name="lang:clipboard.copy" content="Copy to clipboard">
-      
-        <meta name="lang:clipboard.copied" content="Copied to clipboard">
-      
-        <meta name="lang:search.language" content="en">
-      
-        <meta name="lang:search.pipeline.stopwords" content="True">
-      
-        <meta name="lang:search.pipeline.trimmer" content="True">
-      
-        <meta name="lang:search.result.none" content="No matching documents">
-      
-        <meta name="lang:search.result.one" content="1 matching document">
-      
-        <meta name="lang:search.result.other" content="# matching documents">
-      
-        <meta name="lang:search.tokenizer" content="[\s\-]+">
-      
-      <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
-    
-    
-      
-        <title>Architecture - 深度瞎扯</title>
-      
-    
-    
-      <link rel="stylesheet" href="../assets/stylesheets/application.0284f74d.css">
-      
-      
-    
-    
-      <script src="../assets/javascripts/modernizr.74668098.js"></script>
-    
-    
-      
-        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
-      
-    
-    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
-    
-    
-    
-      
-        
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="ie=edge" http-equiv="x-ua-compatible"/>
+<meta content="Copy to clipboard" name="lang:clipboard.copy"/>
+<meta content="Copied to clipboard" name="lang:clipboard.copied"/>
+<meta content="en" name="lang:search.language"/>
+<meta content="True" name="lang:search.pipeline.stopwords"/>
+<meta content="True" name="lang:search.pipeline.trimmer"/>
+<meta content="No matching documents" name="lang:search.result.none"/>
+<meta content="1 matching document" name="lang:search.result.one"/>
+<meta content="# matching documents" name="lang:search.result.other"/>
+<meta content="[\s\-]+" name="lang:search.tokenizer"/>
+<link href="../assets/images/favicon.png" rel="shortcut icon"/>
+<meta content="mkdocs-1.0.4, mkdocs-material-4.4.0" name="generator"/>
+<title>Architecture - 深度瞎扯</title>
+<link href="../assets/stylesheets/application.0284f74d.css" rel="stylesheet"/>
+<script src="../assets/javascripts/modernizr.74668098.js"></script>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&amp;display=fallback" rel="stylesheet"/>
+<style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+<link href="../assets/fonts/material-icons.css" rel="stylesheet"/>
 <script>
   window.ga = window.ga || function() {
     (ga.q = ga.q || []).push(arguments)
@@ -82,501 +46,270 @@
     }
   })
 </script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
-      
-    
-    
-  </head>
-  
-    <body dir="ltr">
-  
-    <svg class="md-svg">
-      <defs>
-        
-        
-      </defs>
-    </svg>
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
-    
-      <a href="#_1" tabindex="1" class="md-skip">
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+</head>
+<body dir="ltr">
+<svg class="md-svg">
+<defs>
+</defs>
+</svg>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+<a class="md-skip" href="#_1" tabindex="1">
         Skip to content
       </a>
-    
-    
-      <header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid">
-    <div class="md-flex">
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <a href=".." title="深度瞎扯" class="md-header-nav__button md-logo">
-          
-            <i class="md-icon"></i>
-          
-        </a>
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
-      </div>
-      <div class="md-flex__cell md-flex__cell--stretch">
-        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
-          
-            <span class="md-header-nav__topic">
+<header class="md-header" data-md-component="header">
+<nav class="md-header-nav md-grid">
+<div class="md-flex">
+<div class="md-flex__cell md-flex__cell--shrink">
+<a class="md-header-nav__button md-logo" href=".." title="深度瞎扯">
+<i class="md-icon"></i>
+</a>
+</div>
+<div class="md-flex__cell md-flex__cell--shrink">
+<label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+</div>
+<div class="md-flex__cell md-flex__cell--stretch">
+<div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+<span class="md-header-nav__topic">
               深度瞎扯
             </span>
-            <span class="md-header-nav__topic">
+<span class="md-header-nav__topic">
               
                 Architecture
               
             </span>
-          
-        </div>
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        
-          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-          
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
-      <label class="md-icon md-search__icon" for="__search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
-        &#xE5CD;
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
-          <div class="md-search-result__meta">
-            Type to start searching
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
-        
-      </div>
-      
-    </div>
-  </nav>
+</div>
+<div class="md-flex__cell md-flex__cell--shrink">
+</div>
+</div>
+</nav>
 </header>
-    
-    <div class="md-container">
-      
-        
-      
-      
-      <main class="md-main">
-        <div class="md-main__inner md-grid" data-md-component="container">
-          
-            
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" data-md-level="0">
-  <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href=".." title="深度瞎扯" class="md-nav__button md-logo">
-      
-        <i class="md-icon"></i>
-      
-    </a>
+<div class="md-container">
+<main class="md-main">
+<div class="md-main__inner md-grid" data-md-component="container">
+<div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title md-nav__title--site" for="__drawer">
+<a class="md-nav__button md-logo" href=".." title="深度瞎扯">
+<i class="md-icon"></i>
+</a>
     深度瞎扯
   </label>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href=".." title="Welcome" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href=".." title="Welcome">
       Welcome
     </a>
-  </li>
-
-    
-      
-      
-      
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
-    
-    <label class="md-nav__link" for="nav-2">
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-toggle md-nav__toggle" data-md-toggle="nav-2" id="nav-2" type="checkbox"/>
+<label class="md-nav__link" for="nav-2">
       归档
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
+<nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+<label class="md-nav__title" for="nav-2">
         归档
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../CUDA10深度学习服务器搭建/" title="深度学习服务器搭建" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../CUDA10深度学习服务器搭建/" title="深度学习服务器搭建">
       深度学习服务器搭建
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../配置Ngrok服务器实现内网穿透/" title="配置Ngrok服务器" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../配置Ngrok服务器实现内网穿透/" title="配置Ngrok服务器">
       配置Ngrok服务器
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../MACOS下安装Pylucene安装过程 && 踩坑记录/" title="MAC下安装Pylucenes踩坑记录" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../MACOS下安装Pylucene安装过程 &amp;&amp; 踩坑记录/" title="MAC下安装Pylucenes踩坑记录">
       MAC下安装Pylucenes踩坑记录
     </a>
-  </li>
-
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4" checked>
-    
-    <label class="md-nav__link" for="nav-2-4">
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" id="nav-2-4" type="checkbox"/>
+<label class="md-nav__link" for="nav-2-4">
       Revision
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-4">
+<nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+<label class="md-nav__title" for="nav-2-4">
         Revision
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-toggle md-nav__toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
         Architecture
       </label>
-    
-    <a href="./" title="Architecture" class="md-nav__link md-nav__link--active">
+<a class="md-nav__link md-nav__link--active" href="./" title="Architecture">
       Architecture
     </a>
-    
-      
 <nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" title="体系结构复习" class="md-nav__link">
+<label class="md-nav__title" for="__toc">Table of contents</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1" title="体系结构复习">
     体系结构复习
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_2" title="第一章" class="md-nav__link">
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2" title="第一章">
     第一章
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" title="第二章" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3" title="第二章">
     第二章
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" title="存储系统" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4" title="存储系统">
     存储系统
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" title="第四章 流水线" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5" title="第四章 流水线">
     第四章 流水线
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#11" title="11章：互联网络" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#11" title="11章：互联网络">
     11章：互联网络
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" title="补充" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6" title="补充">
     补充
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
+</ul>
 </nav>
-    
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../数据库原理(2)复习/" title="Database2" class="md-nav__link">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../数据库原理(2)复习/" title="Database2">
       Database2
     </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5">
-    
-    <label class="md-nav__link" for="nav-2-5">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-5" id="nav-2-5" type="checkbox"/>
+<label class="md-nav__link" for="nav-2-5">
       部署那些事
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-5">
+<nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+<label class="md-nav__title" for="nav-2-5">
         部署那些事
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../flask部署的二三事/" title="Flask部署" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../flask部署的二三事/" title="Flask部署">
       Flask部署
     </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
-    <label class="md-nav__link" for="nav-3">
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" id="nav-3" type="checkbox"/>
+<label class="md-nav__link" for="nav-3">
       近期日志
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
+<nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+<label class="md-nav__title" for="nav-3">
         近期日志
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../6.824 Distributed Systems Engineering/" title="6.824 Lab2" class="md-nav__link">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../6.824 Distributed Systems Engineering/" title="6.824 Lab2">
       6.824 Lab2
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../6.824 Lab3A/" title="6.824 Lab3A" class="md-nav__link">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../6.824 Lab3A/" title="6.824 Lab3A">
       6.824 Lab3A
     </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-  </ul>
+</li>
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
 <nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" title="体系结构复习" class="md-nav__link">
+<label class="md-nav__title" for="__toc">Table of contents</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1" title="体系结构复习">
     体系结构复习
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_2" title="第一章" class="md-nav__link">
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2" title="第一章">
     第一章
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" title="第二章" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3" title="第二章">
     第二章
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" title="存储系统" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4" title="存储系统">
     存储系统
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" title="第四章 流水线" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5" title="第四章 流水线">
     第四章 流水线
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#11" title="11章：互联网络" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#11" title="11章：互联网络">
     11章：互联网络
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" title="补充" class="md-nav__link">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6" title="补充">
     补充
   </a>
-  
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          <div class="md-content">
-            <article class="md-content__inner md-typeset">
-              
-                
-                
-                  <h1>Architecture</h1>
-                
-                <h3 id="_1">体系结构复习</h3>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content">
+<article class="md-content__inner md-typeset">
+<h1>Architecture</h1>
+<h3 id="_1">体系结构复习</h3>
 <h4 id="_2">第一章</h4>
 <ol>
 <li>Amdahl 定理</li>
 </ol>
-<p>Amdahl定理描述了改进**可并行**部分后计算机系统**整体**的加速比例</p>
+<p>Amdahl定理描述了改进<strong>可并行</strong>部分后计算机系统<strong>整体</strong>的加速比例</p>
 <p>​                                   </p>
 <ul>
 <li>书上的定理</li>
@@ -608,17 +341,16 @@ Sn &= \frac{T_{总}}{T'_{总}} = \frac{1}{(1-Fe) + \frac{Fe}{Se}}
 <p>概念:为什么发展计算机系统结构</p>
 </li>
 <li>
-<p>体系结构：研究**软硬件功能分配**和**软硬件界面**</p>
+<p>体系结构：研究<strong>软硬件功能分配</strong>和<strong>软硬件界面</strong></p>
 </li>
 <li>组成原理：逻辑实现</li>
 <li>实现：物理实现</li>
 </ol>
-<div class="highlight"><pre><span></span>🌰：
+<pre><code>🌰：
     确定是否需要乘除指令 -- 系统结构
     乘除指令用乘法器还是加法器实现 -- 组成原理
     乘法器或加法器的物理实现 -- 实现
-</pre></div>
-
+</code></pre>
 <ol>
 <li>
 <p>模拟和仿真</p>
@@ -667,7 +399,7 @@ $$</p>
 <p>佛林分类法</p>
 </li>
 </ol>
-<p>按照**指令流和数据流的多倍型特征**进行分类</p>
+<p>按照<strong>指令流和数据流的多倍型特征</strong>进行分类</p>
 <ul>
 <li>指令流：机器执行的指令序列</li>
 <li>数据流：由指令流调用的数据序列</li>
@@ -721,12 +453,11 @@ $$</p>
 </ol>
 <p>数据表示：计算机硬件能够直接识别，被指令系统直接调用的数据类型</p>
 <p>数据结构：软件实现的数据表示，算法</p>
-<div class="highlight"><pre><span></span>🌰：
+<pre><code>🌰：
     C = A + B
     （1）无向量数据表示：需要4条指令
     （2）有向量数据表示：需要1条指令
-</pre></div>
-
+</code></pre>
 <ol>
 <li>
 <p>指令组成</p>
@@ -1027,7 +758,7 @@ Shuffle(b_{n-1}b_{n-2}…b_{1}b_{0})=(b_{n-2}…b_{1}b_{0}b_{n-1})；
 </script>
 </div>
 <ol>
-<li>蝶式置换 Butterfly：编码**位**交换</li>
+<li>蝶式置换 Butterfly：编码<strong>位</strong>交换</li>
 </ol>
 <div>
 <div class="MathJax_Preview">
@@ -1101,81 +832,58 @@ $$
 <li>任务级或过程级</li>
 <li>作业或程序级</li>
 </ol>
-                
-                  
-                
-              
-              
-                
-
-
-              
-            </article>
-          </div>
-        </div>
-      </main>
-      
-        
+</article>
+</div>
+</div>
+</main>
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid">
-        
-          <a href="../MACOS下安装Pylucene安装过程 && 踩坑记录/" title="MAC下安装Pylucenes踩坑记录" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
-            </div>
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
+<div class="md-footer-nav">
+<nav class="md-footer-nav__inner md-grid">
+<a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href="../MACOS下安装Pylucene安装过程 &amp;&amp; 踩坑记录/" rel="prev" title="MAC下安装Pylucenes踩坑记录">
+<div class="md-flex__cell md-flex__cell--shrink">
+<i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+</div>
+<div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+<span class="md-flex__ellipsis">
+<span class="md-footer-nav__direction">
                   Previous
                 </span>
                 MAC下安装Pylucenes踩坑记录
               </span>
-            </div>
-          </a>
-        
-        
-          <a href="../数据库原理(2)复习/" title="Database2" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
+</div>
+</a>
+<a class="md-flex md-footer-nav__link md-footer-nav__link--next" href="../数据库原理(2)复习/" rel="next" title="Database2">
+<div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+<span class="md-flex__ellipsis">
+<span class="md-footer-nav__direction">
                   Next
                 </span>
                 Database2
               </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
+</div>
+<div class="md-flex__cell md-flex__cell--shrink">
+<i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+</div>
+</a>
+</nav>
+</div>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
         
         powered by
         <a href="https://www.mkdocs.org">MkDocs</a>
         and
         <a href="https://squidfunk.github.io/mkdocs-material/">
           Material for MkDocs</a>
-      </div>
-      
-    </div>
-  </div>
+</div>
+</div>
+</div>
 </footer>
-      
-    </div>
-    
-      <script src="../assets/javascripts/application.245445c6.js"></script>
-      
-      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-      
-    
-  </body>
+</div>
+<script src="../assets/javascripts/application.245445c6.js"></script>
+<script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script src="https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js"></script>
+</body>
 </html>
