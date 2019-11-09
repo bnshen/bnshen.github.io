@@ -326,7 +326,7 @@
 <h1>6.824 Lab3A</h1>
 <h3 id="6824-lab-3a">6.824 Lab 3A</h3>
 <h4 id="_1">摘要</h4>
-<p>Lab3 要求完成基于raft的可容错Key-Value存储。Lab3分成Lab3A和Lab3B，3A要求实现简单的将每个请求的内容追加到 log 列表中，而不用考虑他的空间占用。Lab3B要求实现Snapshot</p>
+<p>Lab3 要求完成基于raft的可容错Key-Value存储。Lab3分成Lab3A和Lab3B，3A要求实现简单的将每个请求的内容追加到 log 列表中，而不用考虑他的空间占用。Lab3B要求实现Snapshot。</p>
 <h4 id="_2">感想</h4>
 <p>完全理解Key-Value Storage和Raft的关系非常重要，如果不能完全理解那么在实现的过程中会遇到很多问题。Raft是一个duplicate state machine，通过维护一份共同的log来防止少于半数的服务器出错（网络、宕机）带来的错误。这次的Key-Value Storage是建立在Raft协议之上的一个存储系统，也就是分布式可容错存储。</p>
 <h4 id="_3">结构</h4>
