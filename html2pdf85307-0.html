@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>任务书2020-沈博南</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<p><strong>毕业设计（论文）任务书</strong></p>
+<p>指导教师 <span class="underline"><strong> 曹晨红</strong></span></p>
+<p>课题名称 <span class="underline"> </span> <strong>面向物联网多任务场景的网络资源协同方法研究</strong> <span class="underline"> </span></p>
+<p>作业期限 <span class="underline">2020年2月24日 起 6月 5日止</span></p>
+<p>接受单位 <span class="underline"> 上海大学计算机工程与科学学院</span></p>
+<p>学生姓名 <span class="underline"> 沈博南</span></p>
+<p>学 号 <span class="underline"> 16121810</span></p>
+<p>所在专业 <span class="underline"> 计算机科学与技术</span></p>
+<p><img src="media/image1.jpeg" style="width:2.5625in;height:0.6875in" alt="标题" /></p>
+<p><strong>二零二零年二月二十四日</strong></p>
+<table>
+<tbody>
+<tr class="odd">
+<td><p>(一)课题来源、意义与主要内容：（注明自拟、科研、科技服务类别及任务提出单位）</p>
+<p>来自：科研项目，上海大学计算机工程与科学学院</p>
+<p>物联网中通常采用无线通信，并同时部署多个智能感知应用。多任务协同的目标是为网络中的多个智能感知应用调度网络设备上的计算资源，以实现数据传输开销最小化和应用程序执行性能的最大化。任务感知结果的性能除了与计算资源相关外，还与输入的数据精度有关，数据在不同维度上的精度对结果有不同成的影响。通过对输入数据在次要唯独方面的精度进行降级，能够有效减小资源开销，提升多任务执行的总体性能。本课题拟研究物联网场景下的多任务协同技术，以实现总体性能的最优化。 本课题要求参与者精读一篇相关论文并在其开源代码的基础上进行实现和展示。</p></td>
+</tr>
+<tr class="even">
+<td><p>(二)目的要求和主要技术指标:</p>
+<p>目的要求：了解使用无线通信进行物联网数据流分析的基本概念、目前研究的状况以及未来的发展方向。根据前期研究提出的问题，在开源代码的基础上完成物联网场景下的多任务网络资源协同框架，根据当前的多种网络资源协同方法，以物联网（IoT）设备为基础进行实验，评价三种常见的数据流分析应用——行人检测（Pedestrian Dectection）、增强现实（Augmented Reality）和分布式Top-K（Distributed Top-K），在使用无线通信的广域网下的表现。提出一种基于机器学习的自适应网络资源协同方法、阐述这种方法的基本原理、特点以及存在的优势，并与当前的几种方法进行比较。</p>
+<p>主要技术指标：</p>
+<p>1. 源码可以在说明文档的指导下运行</p>
+<p>2. 能够较完整地复现指定论文的实验</p></td>
+</tr>
+<tr class="odd">
+<td><p>(三)进度计划:</p>
+<p>第1-2周：精读<em>AWStream Adaptive Wide-Area Streaming Analytics</em></p>
+<p>第3-4周：复现 <em>AWStream Adaptive Wide-Area Streaming Analytics</em>中的实验</p>
+<p>第5-6周：精读其他相关文献、资料和参考书，适当地选择性复现</p>
+<p>第7-8周：基于开源代码搭建适用于物联网(IoT)设备的自适应数据流分析框架</p>
+<p>第9-10周：搭建适用于行人检测、基于机器学习方法的自适应策略生成模型，进行实验</p>
+<p>第10-11周：搭建具有一般性的、基于机器学习方法的自适应策略生成模型，并使用增强现实、分布式Top-K进行实验</p>
+<p>第12周：进行其他适应性数据流传输相关方法、一般性数据流传输协议的实验</p>
+<p>第13-14周： 程序验收，完成论文</p>
+<p>第14-15周： 论文答辩，上交毕业设计成绩及论文</p>
+<p>其中，4月13-17日中期检查。</p></td>
+</tr>
+<tr class="even">
+<td><p>(四) 主要文献、资料和参考书：</p>
+<p>1. Zhang B, Jin X, Ratnasamy S, et al. Awstream: Adaptive wide-area streaming analytics[C]//Proceedings of the 2018 Conference of the ACM Special Interest Group on Data Communication. 2018: 236-252.</p>
+<p>2. Rabkin A, Arye M, Sen S, et al. Aggregation and degradation in jetstream: Streaming analytics in the wide area[C]//11th {USENIX} Symposium on Networked Systems Design and Implementation ({NSDI} 14). 2014: 275-288.</p>
+<p>3. Jonathan, Albert. (2019). Multi-Tenant Geo-Distributed Data Analytics. Retrieved from the University of Minnesota Digital Conservancy, <a href="http://hdl.handle.net/11299/206654."><span class="underline">http://hdl.handle.net/11299/206654.</span></a></p>
+<p>4. Sun Y, Yin X, Jiang J, et al. CS2P: Improving video bitrate selection and adaptation with data-driven throughput prediction[C]//Proceedings of the 2016 ACM SIGCOMM Conference. 2016: 272-285.</p>
+<p>5. Rejaie R, Handley M, Estrin D. Layered quality adaptation for Internet video streaming[J]. IEEE Journal on Selected Areas in Communications, 2000, 18(12): 2530-2543.</p></td>
+</tr>
+<tr class="odd">
+<td><p>（五）审批意见：</p>
+<p>系(教研室)负责人: <span class="underline"> </span></p>
+<p>2020 年2月28日</p></td>
+</tr>
+<tr class="even">
+<td><p>（六）学生意见:</p>
+<p>学生签名: <span class="underline"> </span></p>
+<p>2020 年 2月 28 日</p></td>
+</tr>
+<tr class="odd">
+<td><p>（七）课题变动情况：</p>
+<p>负责人: <span class="underline"> </span></p>
+<p>20 年 月 日</p></td>
+</tr>
+<tr class="even">
+<td><p>（八）注意事项：</p>
+<ol type="1">
+<li><p>本任务书一式三份。（一）、（二）、（三）、（四）各项一般应在毕业作业开始前二周由指导教师认真填写，经系（教研室）负责人审查批准后，一份留系备查，一份由指导教师保存，一份下达给学生。</p></li>
+<li><p>学生应在导师指导下，根据本任务书的要求具体制订实施计划，并积极完成任务。</p></li>
+<li><p>课题内容如有变动，需经所属系或接受单位负责人同意。</p></li>
+</ol></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
