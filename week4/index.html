@@ -17,7 +17,7 @@
 <meta content="[\s\-]+" name="lang:search.tokenizer"/>
 <link href="../assets/images/favicon.png" rel="shortcut icon"/>
 <meta content="mkdocs-1.0.4, mkdocs-material-4.4.0" name="generator"/>
-<title>第一周 - 深度瞎扯</title>
+<title>第四周 - 深度瞎扯</title>
 <link href="../assets/stylesheets/application.0284f74d.css" rel="stylesheet"/>
 <script src="../assets/javascripts/modernizr.74668098.js"></script>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -56,7 +56,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
-<a class="md-skip" href="#introduction" tabindex="1">
+<a class="md-skip" href="#lec-2-markov-decision-process" tabindex="1">
         Skip to content
       </a>
 <header class="md-header" data-md-component="header">
@@ -77,7 +77,7 @@
             </span>
 <span class="md-header-nav__topic">
               
-                第一周
+                第四周
               
             </span>
 </div>
@@ -116,87 +116,10 @@
         毕业设计周记
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active">
-<input class="md-toggle md-nav__toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-        第一周
-      </label>
-<a class="md-nav__link md-nav__link--active" href="./" title="第一周">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../week1/" title="第一周">
       第一周
     </a>
-<nav class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">Table of contents</label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#introduction" title="Introduction">
-    Introduction
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#motivation" title="Motivation">
-    Motivation
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#awstream-design" title="Awstream design">
-    Awstream design
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#api" title="API">
-    API
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#automatic-profiling" title="Automatic Profiling">
-    Automatic Profiling
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#runtime-adaptation" title="Runtime Adaptation">
-    Runtime Adaptation
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#resource-allocation-fairness" title="Resource Allocation &amp; Fairness">
-    Resource Allocation &amp; Fairness
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#implementation" title="Implementation">
-    Implementation
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#evaluation" title="Evaluation">
-    Evaluation
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#runtime-adaptation_1" title="Runtime adaptation">
-    Runtime adaptation
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#discussion-and-future-work" title="Discussion and future work">
-    Discussion and future work
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#related-work" title="Related work">
-    Related work
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../week2/" title="第二周">
@@ -208,10 +131,115 @@
       第三周
     </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../week4/" title="第四周">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-toggle md-nav__toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+        第四周
+      </label>
+<a class="md-nav__link md-nav__link--active" href="./" title="第四周">
       第四周
     </a>
+<nav class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">Table of contents</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1" title="马尔可夫链">
+    马尔可夫链
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2" title="马尔可夫奖励过程">
+    马尔可夫奖励过程
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#return" title="Return 的定义">
+    Return 的定义
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#value" title="Value 函数的定义">
+    Value 函数的定义
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mrp" title="计算马尔可夫奖励过程(MRP)的方法">
+    计算马尔可夫奖励过程(MRP)的方法
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3" title="蒙特卡洛方法">
+    蒙特卡洛方法
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4" title="动态规划方法">
+    动态规划方法
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mdp" title="马尔可夫决策过程(MDP)">
+    马尔可夫决策过程(MDP)
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#policy" title="Policy">
+    Policy
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mdpvalue" title="MDP的Value函数">
+    MDP的Value函数
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#policy-evalution" title="Policy Evalution 评估策略">
+    Policy Evalution 评估策略
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mdp_1" title="MDP中的决策过程">
+    MDP中的决策过程
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5" title="给定策略">
+    给定策略
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6" title="搜索策略">
+    搜索策略
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#policy-iteration" title="policy iteration">
+    policy iteration
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#value-iteration" title="value iteration">
+    value iteration
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -320,72 +348,100 @@
 <label class="md-nav__title" for="__toc">Table of contents</label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#introduction" title="Introduction">
-    Introduction
+<a class="md-nav__link" href="#_1" title="马尔可夫链">
+    马尔可夫链
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#motivation" title="Motivation">
-    Motivation
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#awstream-design" title="Awstream design">
-    Awstream design
+<a class="md-nav__link" href="#_2" title="马尔可夫奖励过程">
+    马尔可夫奖励过程
   </a>
 <nav class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#api" title="API">
-    API
+<a class="md-nav__link" href="#return" title="Return 的定义">
+    Return 的定义
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#automatic-profiling" title="Automatic Profiling">
-    Automatic Profiling
+<a class="md-nav__link" href="#value" title="Value 函数的定义">
+    Value 函数的定义
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#runtime-adaptation" title="Runtime Adaptation">
-    Runtime Adaptation
+<a class="md-nav__link" href="#mrp" title="计算马尔可夫奖励过程(MRP)的方法">
+    计算马尔可夫奖励过程(MRP)的方法
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#resource-allocation-fairness" title="Resource Allocation &amp; Fairness">
-    Resource Allocation &amp; Fairness
+<a class="md-nav__link" href="#_3" title="蒙特卡洛方法">
+    蒙特卡洛方法
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4" title="动态规划方法">
+    动态规划方法
   </a>
 </li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#implementation" title="Implementation">
-    Implementation
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#evaluation" title="Evaluation">
-    Evaluation
+<a class="md-nav__link" href="#mdp" title="马尔可夫决策过程(MDP)">
+    马尔可夫决策过程(MDP)
   </a>
 <nav class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#runtime-adaptation_1" title="Runtime adaptation">
-    Runtime adaptation
+<a class="md-nav__link" href="#policy" title="Policy">
+    Policy
   </a>
 </li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#discussion-and-future-work" title="Discussion and future work">
-    Discussion and future work
+<a class="md-nav__link" href="#mdpvalue" title="MDP的Value函数">
+    MDP的Value函数
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#related-work" title="Related work">
-    Related work
+<a class="md-nav__link" href="#policy-evalution" title="Policy Evalution 评估策略">
+    Policy Evalution 评估策略
   </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mdp_1" title="MDP中的决策过程">
+    MDP中的决策过程
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5" title="给定策略">
+    给定策略
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6" title="搜索策略">
+    搜索策略
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#policy-iteration" title="policy iteration">
+    policy iteration
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#value-iteration" title="value iteration">
+    value iteration
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -394,64 +450,85 @@
 </div>
 <div class="md-content">
 <article class="md-content__inner md-typeset">
-<h1>第一周</h1>
-<h2 id="introduction">Introduction</h2>
-<p>adaptive streaming analytics need both <strong>data fidelity</strong> and <strong>data freshness</strong></p>
-<p>TCP ensures <strong>data fidelity</strong> but not <strong>data freshness</strong></p>
-<p>UDP ensures <strong>data freshness</strong> but not <strong>data fidelity</strong></p>
-<p>Manual policies are sub-optimal, cannot generalize</p>
-<p>So solve the problem in <strong>SYSTEM-level</strong></p>
+<h1 id="lec-2-markov-decision-process">Lec 2 —— Markov Decision Process</h1>
+<p><img alt="截屏2020-03-26 10.34.54" src="https://i.loli.net/2020/03/26/6NcUTsxgiQGFwRn.png"/></p>
+<p>⬆️马尔可夫决策过程</p>
+<h3 id="_1">马尔可夫链</h3>
+<p><img alt="截屏2020-03-26 10.36.40" src="https://i.loli.net/2020/03/26/R7FZBlMp1vmgK9X.png"/></p>
+<h3 id="_2">马尔可夫奖励过程</h3>
+<p>马尔可夫奖励过程 = 马尔可夫链 + 奖励函数</p>
+<p><span><span class="MathJax_Preview">R(s_{t}=s)=\mathbb{E}[r_{t}|s_{t} = s]</span><script type="math/tex">R(s_{t}=s)=\mathbb{E}[r_{t}|s_{t} = s]</script></span></p>
+<h4 id="return">Return 的定义</h4>
+<div>
+<div class="MathJax_Preview">G_{t} = \sum_{i = 0}^n\gamma^iR_{i+1}</div>
+<script type="math/tex; mode=display">G_{t} = \sum_{i = 0}^n\gamma^iR_{i+1}</script>
+</div>
+<h4 id="value">Value 函数的定义</h4>
+<div>
+<div class="MathJax_Preview">V_{t}(s) = \mathbb{E}[G_{t}|s_{t} = s]</div>
+<script type="math/tex; mode=display">V_{t}(s) = \mathbb{E}[G_{t}|s_{t} = s]</script>
+</div>
+<p><span><span class="MathJax_Preview">\gamma = 0</span><script type="math/tex">\gamma = 0</script></span>: 只关注当前的奖励</p>
+<p><span><span class="MathJax_Preview">\gamma = 1</span><script type="math/tex">\gamma = 1</script></span>: 未来奖励和当前奖励相同</p>
+<h4 id="mrp">计算马尔可夫奖励过程(MRP)的方法</h4>
+<p>贝尔曼方程：<span><span class="MathJax_Preview">V(s) = R(s) + \gamma\sum_{s'\in S}P(s'|s)V(s')</span><script type="math/tex">V(s) = R(s) + \gamma\sum_{s'\in S}P(s'|s)V(s')</script></span></p>
+<p><img alt="截屏2020-03-26 10.46.11" src="https://i.loli.net/2020/03/26/FkVGZaBAWLpYQ8N.png"/></p>
+<p>求解大型MRP的方法：</p>
 <ul>
-<li>Abstraction</li>
-<li>Learn policy other than use manual one</li>
-<li>Runtime system</li>
+<li>动态规划</li>
+<li>蒙特卡洛（采样）</li>
+<li>Temporal-Difference learning(结合1、2)</li>
 </ul>
-<p><strong>RESULTS</strong></p>
+<h4 id="_3">蒙特卡洛方法</h4>
+<p><img alt="截屏2020-03-26 10.49.48" src="https://i.loli.net/2020/03/26/mQoqNzBWClEhXI4.png"/></p>
+<p>随机产生多条轨迹，取平均</p>
+<h4 id="_4">动态规划方法</h4>
+<p><img alt="截屏2020-03-26 10.52.25" src="https://i.loli.net/2020/03/26/TVaGLS6viUdFwXz.png"/></p>
+<p>迭代、使收敛</p>
+<h3 id="mdp">马尔可夫决策过程(MDP)</h3>
+<p>MDP = MRP + Action</p>
+<p><span><span class="MathJax_Preview">R(s_{t}=s,a_{t} = a) = \mathbb{E}[r_{t}|s_{t}= s,a_{t} = a]</span><script type="math/tex">R(s_{t}=s,a_{t} = a) = \mathbb{E}[r_{t}|s_{t}= s,a_{t} = a]</script></span></p>
+<p>MDP 包含（S, A, P, R, <span><span class="MathJax_Preview">\gamma</span><script type="math/tex">\gamma</script></span>）</p>
+<h4 id="policy">Policy</h4>
+<p><span><span class="MathJax_Preview">\pi(a|s) = P(a_{t} = a|s_{t} = s)</span><script type="math/tex">\pi(a|s) = P(a_{t} = a|s_{t} = s)</script></span></p>
+<p>给定一个MDP(S, A, P, R, <span><span class="MathJax_Preview">\gamma</span><script type="math/tex">\gamma</script></span>)，和一个策略<span><span class="MathJax_Preview">\pi</span><script type="math/tex">\pi</script></span>，可以转换为MRP</p>
+<h3 id="mdpvalue">MDP的Value函数</h3>
 <ul>
-<li>40x faster than TCP</li>
-<li>45% imporvment than UDP</li>
-<li>Better than JetStream</li>
+<li>state-value func:</li>
+<li><span><span class="MathJax_Preview">\mathbb{v}^\pi(s) = \mathbb{E}_{\pi}[G_{t}|s_{t} = s]</span><script type="math/tex">\mathbb{v}^\pi(s) = \mathbb{E}_{\pi}[G_{t}|s_{t} = s]</script></span></li>
+<li>Action-value func: </li>
+<li><span><span class="MathJax_Preview">q^\pi(s,a) = \mathbb{E}_{\pi}[G_{t}|s_{t} = s, A_{t} = a]</span><script type="math/tex">q^\pi(s,a) = \mathbb{E}_{\pi}[G_{t}|s_{t} = s, A_{t} = a]</script></span></li>
+<li>于是得到这两个函数的关系:</li>
+<li><span><span class="MathJax_Preview">v^\pi(s) = \sum_{a\in A}\pi(a|s)q^\pi(s,a )</span><script type="math/tex">v^\pi(s) = \sum_{a\in A}\pi(a|s)q^\pi(s,a )</script></span></li>
 </ul>
-<h2 id="motivation">Motivation</h2>
-<p>Use public Internet reduce cost but show congestions</p>
-<p>Real-time monitoring is very high-demending</p>
-<p>WAN resources' scarcity </p>
-<h2 id="awstream-design">Awstream design</h2>
-<h3 id="api">API</h3>
-<p>Adaptation as first-class abstraction</p>
-<p><img alt="截屏2020-01-2115.44.17.png" src="https://i.loli.net/2020/03/04/Xedm1VEoC9SWFaw.png"/></p>
-<h3 id="automatic-profiling">Automatic Profiling</h3>
-<p><span><span class="MathJax_Preview">c = [k_1,k_2,\dots,k_n]</span><script type="math/tex">c = [k_1,k_2,\dots,k_n]</script></span></p>
-<p>Calculate <span><span class="MathJax_Preview">B(c_i)</span><script type="math/tex">B(c_i)</script></span>[bandwidth requirement for c] and <span><span class="MathJax_Preview">A(c_i)</span><script type="math/tex">A(c_i)</script></span>[accuracy measure for c]</p>
-<p>Find Pareto-optimal set <span><span class="MathJax_Preview">P</span><script type="math/tex">P</script></span>, where</p>
-<p><span><span class="MathJax_Preview">P = \{c \in C:{c'\in C:B(c')&lt;B(c),A(c')&gt;A(c)} = \varnothing\}</span><script type="math/tex">P = \{c \in C:{c'\in C:B(c')<B(c),A(c')>A(c)} = \varnothing\}</script></span></p>
-<p>using offline profiling or online profiling</p>
-<h3 id="runtime-adaptation">Runtime Adaptation</h3>
-<p><img alt="截屏2020-01-2116.07.37.png" src="https://i.loli.net/2020/03/04/WxdIGj1seVlkUrX.png"/></p>
-<p><img alt="截屏2020-01-2116.14.20.png" src="https://i.loli.net/2020/03/04/bL9JBsMCYRNIi84.png"/></p>
-<h3 id="resource-allocation-fairness">Resource Allocation &amp; Fairness</h3>
-<p>max the mininal acc in all applications（木桶原理）</p>
-<p><img alt="截屏2020-01-2116.27.09.png" src="https://i.loli.net/2020/03/04/bo5mJASqx8pjViI.png"/></p>
-<h2 id="implementation">Implementation</h2>
-<p><img alt="截屏2020-01-2117.08.05.png" src="https://i.loli.net/2020/03/04/tJQZEyIRb23XBYA.png"/></p>
-<h2 id="evaluation">Evaluation</h2>
-<p>large bandwidth variation</p>
-<p>single knob(one dimension) leads to sub-optimal results</p>
-<p><img alt="截屏2020-01-2117.26.48.png" src="https://i.loli.net/2020/03/04/g7MuGX6mn9pqSzB.png"/></p>
-<h3 id="runtime-adaptation_1">Runtime adaptation</h3>
-<p>use Linux <code>tc</code>(use <code>man tc</code>) to control the clients’ outgoing bandwidth</p>
-<pre><code>Background Limitation is 25Mbps
-t &lt; 200s no shaping 
-200s &lt;= t &lt;= 380s limit to 7.5Mbps
-380s &lt; t &lt;= 440s limit to 5Mbps
-</code></pre>
-<h2 id="discussion-and-future-work">Discussion and future work</h2>
-<p>reduce dev effort</p>
-<p>fault tolerance and recovery</p>
-<p>profile modeling</p>
-<p>bandwidth modeling and prediction</p>
-<h2 id="related-work">Related work</h2>
-<p>/</p>
+<p><img alt="截屏2020-03-26 11.30.04" src="https://i.loli.net/2020/03/26/utlZBV4fMYhnSHz.png"/></p>
+<p><img alt="截屏2020-03-26 11.31.11" src="https://i.loli.net/2020/03/26/bdwZfB8IAMli4Yh.png"/></p>
+<p><img alt="截屏2020-03-26 11.31.19" src="https://i.loli.net/2020/03/26/xwjOiGXJS3hZpqn.png"/></p>
+<h3 id="policy-evalution">Policy Evalution 评估策略</h3>
+<p>计算<span><span class="MathJax_Preview">v^\pi(s)</span><script type="math/tex">v^\pi(s)</script></span>：与计算<span><span class="MathJax_Preview">v(s)</span><script type="math/tex">v(s)</script></span>的方法类似</p>
+<p><img alt="截屏2020-03-26 11.32.52" src="https://i.loli.net/2020/03/26/T1v4E9SenDxdMUw.png"/></p>
+<h3 id="mdp_1">MDP中的决策过程</h3>
+<ul>
+<li>预测：输出<span><span class="MathJax_Preview">v^\pi</span><script type="math/tex">v^\pi</script></span></li>
+<li>搜索最优策略：输出最优<span><span class="MathJax_Preview">v^*</span><script type="math/tex">v^*</script></span>和<span><span class="MathJax_Preview">\pi^*</span><script type="math/tex">\pi^*</script></span></li>
+</ul>
+<h4 id="_5">给定策略</h4>
+<p><img alt="截屏2020-03-26 11.55.27" src="https://i.loli.net/2020/03/26/7rRUaDjKGWiNnmt.png"/></p>
+<p><img alt="截屏2020-03-26 11.58.02" src="https://i.loli.net/2020/03/26/P4tbp6gUuJTAmqM.png"/></p>
+<h3 id="_6">搜索策略</h3>
+<h5 id="policy-iteration">policy iteration</h5>
+<p><span><span class="MathJax_Preview">\pi^*(s) = argmax_{\pi}v^\pi(s)</span><script type="math/tex">\pi^*(s) = argmax_{\pi}v^\pi(s)</script></span></p>
+<p><img alt="截屏2020-03-26 12.00.45" src="https://i.loli.net/2020/03/26/n8QSRBKvrO37FVw.png"/></p>
+<p><img alt="截屏2020-03-26 12.04.06" src="https://i.loli.net/2020/03/26/MeAlyNn6bcjoVCg.png"/></p>
+<p>任意选取<span><span class="MathJax_Preview">\pi</span><script type="math/tex">\pi</script></span>，计算出<span><span class="MathJax_Preview">v</span><script type="math/tex">v</script></span>，根据<span><span class="MathJax_Preview">v</span><script type="math/tex">v</script></span>计算出<span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span>，然后更新<span><span class="MathJax_Preview">\pi</span><script type="math/tex">\pi</script></span></p>
+<p>由此可得出最佳的policy</p>
+<p>于是当改进停止时，Bellman optimality equation 满足</p>
+<div>
+<div class="MathJax_Preview">v^\pi(s) = \max_{a\in A}q^\pi(s,a)</div>
+<script type="math/tex; mode=display">v^\pi(s) = \max_{a\in A}q^\pi(s,a)</script>
+</div>
+<h5 id="value-iteration">value iteration</h5>
+<p>仅仅优化value，最后retrieve policy</p>
 </article>
 </div>
 </div>
@@ -459,7 +536,7 @@ t &lt; 200s no shaping
 <footer class="md-footer">
 <div class="md-footer-nav">
 <nav class="md-footer-nav__inner md-grid">
-<a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href=".." rel="prev" title="Welcome">
+<a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href="../week3/" rel="prev" title="第三周">
 <div class="md-flex__cell md-flex__cell--shrink">
 <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
 </div>
@@ -468,17 +545,17 @@ t &lt; 200s no shaping
 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Welcome
+                第三周
               </span>
 </div>
 </a>
-<a class="md-flex md-footer-nav__link md-footer-nav__link--next" href="../week2/" rel="next" title="第二周">
+<a class="md-flex md-footer-nav__link md-footer-nav__link--next" href="../CUDA10深度学习服务器搭建/" rel="next" title="深度学习服务器搭建">
 <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
 <span class="md-flex__ellipsis">
 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                第二周
+                深度学习服务器搭建
               </span>
 </div>
 <div class="md-flex__cell md-flex__cell--shrink">
