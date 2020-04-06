@@ -17,7 +17,7 @@
 <meta content="[\s\-]+" name="lang:search.tokenizer"/>
 <link href="../assets/images/favicon.png" rel="shortcut icon"/>
 <meta content="mkdocs-1.0.4, mkdocs-material-4.4.0" name="generator"/>
-<title>配置Ngrok服务器 - 深度瞎扯</title>
+<title>第五周 - 深度瞎扯</title>
 <link href="../assets/stylesheets/application.0284f74d.css" rel="stylesheet"/>
 <script src="../assets/javascripts/modernizr.74668098.js"></script>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -56,7 +56,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
-<a class="md-skip" href="#ngrok" tabindex="1">
+<a class="md-skip" href="#lecture-3-model-free-prediction-and-control" tabindex="1">
         Skip to content
       </a>
 <header class="md-header" data-md-component="header">
@@ -77,7 +77,7 @@
             </span>
 <span class="md-header-nav__topic">
               
-                配置Ngrok服务器
+                第五周
               
             </span>
 </div>
@@ -106,8 +106,8 @@
       Welcome
     </a>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" id="nav-2" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-toggle md-nav__toggle" data-md-toggle="nav-2" id="nav-2" type="checkbox"/>
 <label class="md-nav__link" for="nav-2">
       毕业设计周记
     </label>
@@ -136,16 +136,107 @@
       第四周
     </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../week5/" title="第五周">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-toggle md-nav__toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+        第五周
+      </label>
+<a class="md-nav__link md-nav__link--active" href="./" title="第五周">
       第五周
     </a>
+<nav class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">Table of contents</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#model-free-rl" title="Model-Free RL:">
+    Model-Free RL:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#monte-carlo-policy-evaluation" title="Monte Carlo policy evaluation">
+    Monte Carlo policy evaluation
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mc-dp" title="MC &amp; DP">
+    MC &amp; DP
+  </a>
 </li>
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-toggle md-nav__toggle" data-md-toggle="nav-3" id="nav-3" type="checkbox"/>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#temporal-difference-td-learning" title="Temporal Difference (TD) learning">
+    Temporal Difference (TD) learning
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dpmctd" title="DP，MC，TD的区别">
+    DP，MC，TD的区别
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dp" title="DP">
+    DP
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mc" title="MC">
+    MC
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#td" title="TD">
+    TD
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1" title="综合比较">
+    综合比较
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#model-free-control-for-mdp" title="Model-free Control for MDP">
+    Model-free Control for MDP
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#epsilon-greedyepsilon-greedy-ensure-exploration" title="\epsilon-Greedy\epsilon-Greedy: ensure exploration">
+    \epsilon-Greedy\epsilon-Greedy: ensure exploration
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#monte-carlo-with-greedy-exploration" title="Monte Carlo with ε-Greedy Exploration">
+    Monte Carlo with ε-Greedy Exploration
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#on-policy-learning-off-policy-learning" title="On-policy learning &amp; Off-policy learning">
+    On-policy learning &amp; Off-policy learning
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#q-learning" title="Q learning">
+    Q learning
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" id="nav-3" type="checkbox"/>
 <label class="md-nav__link" for="nav-3">
       归档
     </label>
@@ -159,87 +250,10 @@
       深度学习服务器搭建
     </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-toggle md-nav__toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-        配置Ngrok服务器
-      </label>
-<a class="md-nav__link md-nav__link--active" href="./" title="配置Ngrok服务器">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../配置Ngrok服务器实现内网穿透/" title="配置Ngrok服务器">
       配置Ngrok服务器
     </a>
-<nav class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">Table of contents</label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_1" title="前期准备">
-    前期准备
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_2" title="配置域名解析">
-    配置域名解析
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_3" title="安装准备">
-    安装准备
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#go" title="安装GO">
-    安装GO
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#ngrok_1" title="下载ngrok源码">
-    下载ngrok源码
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_4" title="安装证书">
-    安装证书
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_5" title="修改证书位置">
-    修改证书位置
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_6" title="编译">
-    编译
-  </a>
-<nav class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_7" title="编译服务端">
-    编译服务端
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_8" title="编译客户端">
-    编译客户端
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_9" title="启动服务器">
-    启动服务器
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_10" title="启动客户端">
-    启动客户端
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../MACOS下安装Pylucene安装过程 &amp;&amp; 踩坑记录/" title="MAC下安装Pylucenes踩坑记录">
@@ -325,72 +339,86 @@
 <label class="md-nav__title" for="__toc">Table of contents</label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_1" title="前期准备">
-    前期准备
+<a class="md-nav__link" href="#model-free-rl" title="Model-Free RL:">
+    Model-Free RL:
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_2" title="配置域名解析">
-    配置域名解析
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_3" title="安装准备">
-    安装准备
+<a class="md-nav__link" href="#monte-carlo-policy-evaluation" title="Monte Carlo policy evaluation">
+    Monte Carlo policy evaluation
   </a>
 <nav class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#go" title="安装GO">
-    安装GO
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#ngrok_1" title="下载ngrok源码">
-    下载ngrok源码
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_4" title="安装证书">
-    安装证书
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_5" title="修改证书位置">
-    修改证书位置
+<a class="md-nav__link" href="#mc-dp" title="MC &amp; DP">
+    MC &amp; DP
   </a>
 </li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_6" title="编译">
-    编译
+<a class="md-nav__link" href="#temporal-difference-td-learning" title="Temporal Difference (TD) learning">
+    Temporal Difference (TD) learning
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dpmctd" title="DP，MC，TD的区别">
+    DP，MC，TD的区别
   </a>
 <nav class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_7" title="编译服务端">
-    编译服务端
+<a class="md-nav__link" href="#dp" title="DP">
+    DP
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_8" title="编译客户端">
-    编译客户端
+<a class="md-nav__link" href="#mc" title="MC">
+    MC
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_9" title="启动服务器">
-    启动服务器
+<a class="md-nav__link" href="#td" title="TD">
+    TD
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_10" title="启动客户端">
-    启动客户端
+<a class="md-nav__link" href="#_1" title="综合比较">
+    综合比较
   </a>
 </li>
 </ul>
 </nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#model-free-control-for-mdp" title="Model-free Control for MDP">
+    Model-free Control for MDP
+  </a>
+<nav class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#epsilon-greedyepsilon-greedy-ensure-exploration" title="\epsilon-Greedy\epsilon-Greedy: ensure exploration">
+    \epsilon-Greedy\epsilon-Greedy: ensure exploration
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#monte-carlo-with-greedy-exploration" title="Monte Carlo with ε-Greedy Exploration">
+    Monte Carlo with ε-Greedy Exploration
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#on-policy-learning-off-policy-learning" title="On-policy learning &amp; Off-policy learning">
+    On-policy learning &amp; Off-policy learning
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#q-learning" title="Q learning">
+    Q learning
+  </a>
 </li>
 </ul>
 </nav>
@@ -399,98 +427,47 @@
 </div>
 <div class="md-content">
 <article class="md-content__inner md-typeset">
-<h1 id="ngrok">配置Ngrok服务器实现内网穿透</h1>
-<p>如果你有一台电脑，希望能从公网访问，那么你就需要ngrok进行内网穿透</p>
-<h2 id="_1">前期准备</h2>
+<h1 id="lecture-3-model-free-prediction-and-control">Lecture 3: Model-free Prediction and Control</h1>
+<h3 id="model-free-rl">Model-Free RL:</h3>
+<p>Model-free: solve an <strong>unknown</strong> MDP</p>
+<p>In a lot of real-world problems, MDP model is either unknown or known by too big or too complex to use</p>
 <ul>
-<li>VPS，或者服务器，有公网IP</li>
-<li>已备案域名</li>
-<li>64位 Centos6</li>
+<li>Atari Game, Game of Go, Helicopter, Portfolio management, etc</li>
 </ul>
-<h2 id="_2">配置域名解析</h2>
-<p>把<code>ngrok</code>和<code>*.ngrok</code>都解析到你的VPS的IP地址上，其中记录类型为<code>A</code></p>
-<h2 id="_3">安装准备</h2>
-<h3 id="go">安装GO</h3>
-<pre><code class="bash">1. 如果支持
-yum install golang
-
-2. 不支持
-wget https://storage.googleapis.com/golang/go1.8.3.linux-amd64.tar.gz
-tar -C /usr/local -xzf go1.8.3.linux-amd64.tar.gz
-vim /etc/profile
-//添加以下内容：
-export PATH=$PATH:/usr/local/go/bin
-source /etc/profile
-//检测是否安装成功go
-go version
-</code></pre>
-<h3 id="ngrok_1">下载ngrok源码</h3>
-<pre><code class="bash">mkdir /ngrok
-cd /ngrok
-git clone https://github.com/inconshreveable/ngrok.git
-</code></pre>
-<h3 id="_4">安装证书</h3>
-<pre><code class="bash">export NGROKURL="///你自己的url///比如[ngork.myurl.com]"
-
-
-cd /root/ngrok
-openssl genrsa -out rootCA.key 2048
-openssl req -x509 -new -nodes -key rootCA.key -subj "/CN=$NGROKURL" -days 5000 -out rootCA.pem
-openssl genrsa -out device.key 2048
-openssl req -new -key device.key -subj "/CN=$NGROKURL" -out device.csr
-openssl x509 -req -in device.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateserial -out device.crt -days 5000
-</code></pre>
-<h3 id="_5">修改证书位置</h3>
-<pre><code class="bash">cp rootCA.pem assets/client/tls/ngrokroot.crt
-#会询问是否覆盖，一定要写 y 再确认，否则无法覆盖
-cp device.crt assets/server/tls/snakeoil.crt
-#会询问是否覆盖，一定要写 y 再确认，否则无法覆盖
-cp device.key assets/server/tls/snakeoil.key
-#会询问是否覆盖，一定要写 y 再确认，否则无法覆盖
-</code></pre>
-<h2 id="_6">编译</h2>
-<pre><code class="bash">#把/usr/local/go/bin目录下的 go-bindata 拷贝到/root/ngrok/bin下
-cp /usr/local/go/bin/go-bindata /root/ngrok/bin/
-</code></pre>
-<h3 id="_7">编译服务端</h3>
-<pre><code class="bash">make release-server
-</code></pre>
-<p>编译完成后会存在/root/ngrok/bin/ngrokd</p>
-<h3 id="_8">编译客户端</h3>
-<pre><code class="bash">GOOS=xxx GOARCH=xxx make release-client
-
-#Linux 平台 32 位系统：GOOS=linux GOARCH=386
-#Linux 平台 64 位系统：GOOS=linux GOARCH=amd64
-
-#Windows 平台 32 位系统：GOOS=windows GOARCH=386
-#Windows 平台 64 位系统：GOOS=windows GOARCH=amd64
-
-#MAC 平台 32 位系统：GOOS=darwin GOARCH=386
-#MAC 平台 64 位系统：GOOS=darwin GOARCH=amd64
-
-#ARM 平台：GOOS=linux GOARCH=arm
-</code></pre>
-<p>编译完成后会存在/root/ngrok/bin/xxxx[你的平台]/ngrok</p>
-<h3 id="_9">启动服务器</h3>
-<pre><code class="bash">cd bin
-./ngrokd -domain=$NGROKURL -httpAddr=":8088" -httpsAddr=":8089"
-#tunnel默认4443
-</code></pre>
-<h3 id="_10">启动客户端</h3>
-<p>创建<code>ngrok.cfg</code></p>
-<pre><code class="bash">server_addr:"///你自己的url///比如[ngork.myurl.com]"
-trust_host_root_certs: false
-</code></pre>
-<p>启动</p>
-<pre><code class="powershell">ngrok -subdomain=[你的本地服务名，不写会自动生成] -config=ngrok.cfg -log=ngrok.log 8888[你本地的端口号]
-</code></pre>
-<p>如果是windows可以创建<code>start.bat</code></p>
-<pre><code class="powershell">@echo on
-cd %cd%
-#ngrok -proto=tcp 22
-#ngrok start web
-ngrok -subdomain=[你的本地服务名，不写会自动生成] -config=ngrok.cfg -log=ngrok.log 8888[你本地的端口号]
-</code></pre>
+<p>Model-free RL can solve the problems through interaction with the environment<img alt="截屏2020-03-30 10.29.14" src="https://i.loli.net/2020/03/30/OdR3J9Ha7yoGKNX.png" style="zoom:50%;"/></p>
+<p>How to do policy evaluation:</p>
+<ul>
+<li>Monte Carlo policy evaluation（采样）</li>
+<li>Temporal Difference (TD) learning</li>
+</ul>
+<h3 id="monte-carlo-policy-evaluation">Monte Carlo policy evaluation</h3>
+<p><img alt="截屏2020-03-30 10.33.01" src="https://i.loli.net/2020/03/30/CeV1SjDQIT8kKis.png"/></p>
+<p>更方便的方法：</p>
+<p><img alt="截屏2020-03-30 10.35.09" src="https://i.loli.net/2020/03/30/Jjai9OsXdr4PVuq.png" style="zoom: 25%;"/></p>
+<h4 id="mc-dp">MC &amp; DP</h4>
+<p>MC --&gt; model free，DP --&gt; require MDP</p>
+<p>MC --&gt; fast</p>
+<h3 id="temporal-difference-td-learning">Temporal Difference (TD) learning</h3>
+<p>TD learns from incomplete episodes, by bootstrapping</p>
+<h3 id="dpmctd">DP，MC，TD的区别</h3>
+<h4 id="dp">DP</h4>
+<p><img alt="截屏2020-03-30 10.49.13" src="https://i.loli.net/2020/03/30/iTdyESaoUxbkqZI.png"/></p>
+<h4 id="mc">MC</h4>
+<p><img alt="截屏2020-03-30 10.49.25" src="https://i.loli.net/2020/03/30/zjLt3CpqEgRFdBn.png"/></p>
+<h4 id="td">TD</h4>
+<p><img alt="截屏2020-03-30 10.50.19" src="https://i.loli.net/2020/03/30/5IJwHyDXxc3uiMT.png"/></p>
+<h4 id="_1">综合比较</h4>
+<p><img alt="截屏2020-03-30 10.51.05" src="https://i.loli.net/2020/03/30/Lztlrfp3u4PsjBX.png"/></p>
+<h3 id="model-free-control-for-mdp">Model-free Control for MDP</h3>
+<h4 id="epsilon-greedyepsilon-greedy-ensure-exploration"><span><span class="MathJax_Preview">\epsilon-Greedy</span><script type="math/tex">\epsilon-Greedy</script></span>: ensure exploration</h4>
+<p><img alt="截屏2020-03-30 11.02.07" src="https://i.loli.net/2020/03/30/v2bxWXPMGmjcYfO.png"/></p>
+<h4 id="monte-carlo-with-greedy-exploration">Monte Carlo with ε-Greedy Exploration</h4>
+<p><img alt="截屏2020-03-30 11.02.58" src="https://i.loli.net/2020/03/30/EWT2zdUa3YuqC7N.png"/></p>
+<h3 id="on-policy-learning-off-policy-learning">On-policy learning &amp; Off-policy learning</h3>
+<p>On-policy: 使用一个策略进行探索/学习</p>
+<p><img alt="截屏2020-03-30 11.09.23" src="https://i.loli.net/2020/03/30/IXemhFQrC6b3Ktu.png"/></p>
+<h3 id="q-learning">Q learning</h3>
+<p><img alt="截屏2020-03-30 11.20.14" src="https://i.loli.net/2020/03/30/iBZX8LWRTDeEHo5.png"/></p>
 </article>
 </div>
 </div>
@@ -498,7 +475,7 @@ ngrok -subdomain=[你的本地服务名，不写会自动生成] -config=ngrok.c
 <footer class="md-footer">
 <div class="md-footer-nav">
 <nav class="md-footer-nav__inner md-grid">
-<a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href="../CUDA10深度学习服务器搭建/" rel="prev" title="深度学习服务器搭建">
+<a class="md-flex md-footer-nav__link md-footer-nav__link--prev" href="../week4/" rel="prev" title="第四周">
 <div class="md-flex__cell md-flex__cell--shrink">
 <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
 </div>
@@ -507,17 +484,17 @@ ngrok -subdomain=[你的本地服务名，不写会自动生成] -config=ngrok.c
 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                深度学习服务器搭建
+                第四周
               </span>
 </div>
 </a>
-<a class="md-flex md-footer-nav__link md-footer-nav__link--next" href="../MACOS下安装Pylucene安装过程 &amp;&amp; 踩坑记录/" rel="next" title="MAC下安装Pylucenes踩坑记录">
+<a class="md-flex md-footer-nav__link md-footer-nav__link--next" href="../CUDA10深度学习服务器搭建/" rel="next" title="深度学习服务器搭建">
 <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
 <span class="md-flex__ellipsis">
 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                MAC下安装Pylucenes踩坑记录
+                深度学习服务器搭建
               </span>
 </div>
 <div class="md-flex__cell md-flex__cell--shrink">
